@@ -36,20 +36,12 @@ By following this order, you can build a solid foundation in data analysis and d
 ***
 # Software Installation
 Below are links to short YouTube videos that will help you with the installation of Excel, SQL and PowerBI .
-***If you cannot afford to pay for it, the video on Excel provides an alternative way to have Excel
-running and working for you***
+***If you cannot afford to pay for it, the video on Excel provides an alternative way to have Excel running and working for you***
 [Excel:](https://youtu.be/pL3HmenP7ro)
 [SQL:](https://youtu.be/2c2fUOgZMmY)
 [PowerBI:](https://youtu.be/GT2NcTE6UEo)
-Meanwhile, an alternative way to access Excel and PowerBI (via Microsoft 365) is also
-accessible
-With the Microsoft Office 365, you have access to a variety of Microsoft products including Excel
-and PowerBI.
-Use the link below to check it out
-https://www.microsoft.com/en/microsoft-365/buy/compare-all-microsoft-365-products?market=af
-&tab=1&rtc=1
-Or
-www.office.com
+Meanwhile, an alternative way to access Excel and PowerBI via [Microsoft 365](https://www.microsoft.com/en/microsoft-365/buy/compare-all-microsoft-365-products?market=af&tab=1&rtc=1) Or [Office](www.office.com)
+***
 # A. Excel
 a brief overview of Microsoft Excel:
 Microsoft Excel is a spreadsheet software developed by Microsoft. It's widely used for various data-related tasks such as data entry, analysis, and visualization. Excel is equipped with a vast array of features that allow users to perform complex data analysis tasks easily. Here are some key features of Excel:
