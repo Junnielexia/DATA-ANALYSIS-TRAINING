@@ -88,10 +88,10 @@ basic steps you can follow to analyze a dataset using Excel:
 # WEEK 1 - EXCEL
 ## Task 1
 Create and populate a table (10 rows) with the following information
-● Student Name
-● Age
-● Height
-● Year of birth
-● Exam score
+● *Student Name*
+● *Age*
+● *Height*
+● *Year of birth*
+● *Exam score*
 *Calculate the total of the Exam score*
 ### Answer
