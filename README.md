@@ -34,6 +34,22 @@ here's a suggested order for learning the tools and subheadings in data analysis
 6. **Cloud-Based Services:** Finally, consider learning about cloud-based services such as Amazon Web Services (AWS) or Microsoft Azure. These services provide access to powerful computing resources, storage, and data analysis tools, making it easy to perform large-scale data analysis tasks.
 By following this order, you can build a solid foundation in data analysis and develop the skills necessary to perform meaningful analysis and draw insightful conclusions from data.
 ***
+# Software Installation
+Below are links to short YouTube videos that will help you with the installation of Excel, SQL and PowerBI .
+***If you cannot afford to pay for it, the video on Excel provides an alternative way to have Excel
+running and working for you***
+[Excel:](https://youtu.be/pL3HmenP7ro)
+[SQL:](https://youtu.be/2c2fUOgZMmY)
+[PowerBI:](https://youtu.be/GT2NcTE6UEo)
+Meanwhile, an alternative way to access Excel and PowerBI (via Microsoft 365) is also
+accessible
+With the Microsoft Office 365, you have access to a variety of Microsoft products including Excel
+and PowerBI.
+Use the link below to check it out
+https://www.microsoft.com/en/microsoft-365/buy/compare-all-microsoft-365-products?market=af
+&tab=1&rtc=1
+Or
+www.office.com
 # A. Excel
 a brief overview of Microsoft Excel:
 Microsoft Excel is a spreadsheet software developed by Microsoft. It's widely used for various data-related tasks such as data entry, analysis, and visualization. Excel is equipped with a vast array of features that allow users to perform complex data analysis tasks easily. Here are some key features of Excel:
