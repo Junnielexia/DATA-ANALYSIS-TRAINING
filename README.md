@@ -43,7 +43,9 @@ Below are links to short YouTube videos that will help you with the installation
 Meanwhile, an alternative way to access Excel and PowerBI via [Microsoft 365](https://www.microsoft.com/en/microsoft-365/buy/compare-all-microsoft-365-products?market=af&tab=1&rtc=1) Or [Office](www.office.com)
 ***
 # A. Excel
-a brief overview of Microsoft Excel:
+![image](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/4fa051c9-960c-44f5-bf0c-1aee9f06fdb6)
+***
+## A brief overview of Microsoft Excel:
 Microsoft Excel is a spreadsheet software developed by Microsoft. It's widely used for various data-related tasks such as data entry, analysis, and visualization. Excel is equipped with a vast array of features that allow users to perform complex data analysis tasks easily. Here are some key features of Excel:
 1. **Data Entry and Management:** Excel allows you to enter, store, and manage data in a tabular format. You can create tables, add and edit data, and sort and filter data to
 make it easier to analyze.
@@ -83,4 +85,3 @@ basic steps you can follow to analyze a dataset using Excel:
 5. **Analyze your data:** Once you have created your PivotTable, you can start analyzing your data. Excel provides a variety of tools that allow you to filter, sort, and group your data, as well as perform calculations and create charts and graphs.
 6. **Draw conclusions:** After you have analyzed your data, you can draw conclusions and make decisions based on your findings. You can use your PivotTable and other Excel tools to identify patterns, trends, and outliers in your data, and make informed decisions based on your analysis.
 ***
-![image](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/4fa051c9-960c-44f5-bf0c-1aee9f06fdb6)
