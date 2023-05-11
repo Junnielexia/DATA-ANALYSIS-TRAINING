@@ -85,3 +85,13 @@ basic steps you can follow to analyze a dataset using Excel:
 5. **Analyze your data:** Once you have created your PivotTable, you can start analyzing your data. Excel provides a variety of tools that allow you to filter, sort, and group your data, as well as perform calculations and create charts and graphs.
 6. **Draw conclusions:** After you have analyzed your data, you can draw conclusions and make decisions based on your findings. You can use your PivotTable and other Excel tools to identify patterns, trends, and outliers in your data, and make informed decisions based on your analysis.
 ***
+# WEEK 1 - EXCEL
+## Task 1
+Create and populate a table (10 rows) with the following information
+● Student Name
+● Age
+● Height
+● Year of birth
+● Exam score
+*Calculate the total of the Exam score*
+### Answer
