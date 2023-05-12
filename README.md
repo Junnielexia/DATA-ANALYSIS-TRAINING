@@ -105,6 +105,9 @@ To solve the task, I created a student data using characters from [Avater the la
 2. Highlight cells where the unit sold are greater than average.
 3. show only the segments in Canada where over 2000 products were sold.
 ### Answer
+To solve the task,I used the sum function to calculate total revenue (SALES) and profit , then used conditional formating to highligh units sold that are greater than the average i calculated and finally i used the filter function to show the question 3.
+![Screenshot (67)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/8bf0651c-b4f4-4426-a670-3b7c03a5516a)
+
 ***
 ## WEEK 1 TASK: SALES DATA
 1. Total units sold.
