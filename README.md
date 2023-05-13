@@ -43,6 +43,7 @@ Below are links to short YouTube videos that will help you with the installation
 Meanwhile, an alternative way to access Excel and PowerBI via [Microsoft 365](https://www.microsoft.com/en/microsoft-365/buy/compare-all-microsoft-365-products?market=af&tab=1&rtc=1) Or [Office](www.office.com)
 ***
 # A. Excel
+
 ![image](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/4fa051c9-960c-44f5-bf0c-1aee9f06fdb6)
 ***
 ## A brief overview of Microsoft Excel:
@@ -97,6 +98,7 @@ Create and populate a table (10 rows) with the following information
 ● *Calculate the total of the Exam score* and highlight the scores that are above average.
 ### Answer
 To solve the task, I created a student data using characters from [Avater the last air bender],I then used the sorting function to arrange the students name in ascending order and calulated both the  total exam score and average. Finally I used the average score to carry out a conditional formatting where only the student that scored above average were highlighted.
+
 ![Screenshot (65)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/70dde911-1b43-4eaa-9677-79241519b382)
 
 ***
@@ -106,6 +108,7 @@ To solve the task, I created a student data using characters from [Avater the la
 3. show only the segments in Canada where over 2000 products were sold.
 ### Answer
 To solve the task,I used the sum function to calculate total revenue (SALES) and profit , then used conditional formating to highligh units sold that are greater than the average i calculated and finally i used the filter function to show the question 3.
+
 ![Screenshot (67)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/8bf0651c-b4f4-4426-a670-3b7c03a5516a)
 
 ***
@@ -123,9 +126,11 @@ To solve the task,I used the sum function to calculate total revenue (SALES) and
 ### Answer
 To solve this, i used the sumfunction to answer question 1-4,i calculated the average and used conditional formating to answer question 6&7, Iused the filter function to solve question 8 and 9 and finally I used data validation function to answer question 10.
 #### TASK 1-8,10
+
 ![week1question1-10](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/8baaf186-d707-4e50-9b81-1b1c19240c8c)
 
 #### TASK 9
+
 ![week1question9](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/3052a3e0-5756-45c3-9cd8-ba9f184f027e)
 ***
 # WEEK 2 - EXCEL formulas and function
