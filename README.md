@@ -126,4 +126,6 @@ To solve this, i used the sumfunction to answer question 1-4,i calculated the av
 ![week1question1-10](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/8baaf186-d707-4e50-9b81-1b1c19240c8c)
 
 #### TASK 9
+![week1question9](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/3052a3e0-5756-45c3-9cd8-ba9f184f027e)
+***
 
