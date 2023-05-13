@@ -120,4 +120,10 @@ To solve the task,I used the sum function to calculate total revenue (SALES) and
 8. Sort the product column in ascending order.
 9. Show information for the product sold in Canada under the segment 'Enterprise' and ' Channel partners'for the month july.
 10. Set a rule for the month number columnb. The rule should allow only for values from (1 - 10): Show cells that did not meet with this condition using the data validation feature.
+### Answer
+To solve this, i used the sumfunction to answer question 1-4,i calculated the average and used conditional formating to answer question 6&7, Iused the filter function to solve question 8 and 9 and finally I used data validation function to answer question 10.
+#### TASK 1-8,10
+![week1question1-10](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/8baaf186-d707-4e50-9b81-1b1c19240c8c)
+
+#### TASK 9
 
