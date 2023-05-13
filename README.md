@@ -128,4 +128,30 @@ To solve this, i used the sumfunction to answer question 1-4,i calculated the av
 #### TASK 9
 ![week1question9](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/3052a3e0-5756-45c3-9cd8-ba9f184f027e)
 ***
+# WEEK 2 - EXCEL formulas and function
+Excel formulas and functions are powerful tools that allow users to perform various calculations and operations within spreadsheets. Here are some important concepts and functions you should be aware of:
 
+- **BODMAS:** This stands for Bracket, Order, Division, Multiplication, Addition, and Subtraction. It is a mathematical rule used to determine the order of operations when evaluating mathematical expressions.
+
+- **Relative and Absolute referencing:** When using formulas in Excel, cell references can be either relative or absolute. A relative reference changes as it is copied or filled, whereas an absolute reference remains constant. Absolute referencing is denoted by a "$" sign before the column and/or row reference.
+- **RAND and RANDBETWEEN:** These functions generate random numbers in Excel. RAND produces a random number between 0 and 1, while RANDBETWEEN generates a random integer between a specified range of values.
+- **Transpose:** in Excel this means flipping the orientation of data in a table or range of cells, converting the rows of a table into columns, or vice versa.
+
+## Basic functions:
+- **SUM:** adds up a range of cells.
+- **AVERAGE:** calculates the average of a range of cells.
+- **MAX:** finds the highest value in a range.
+- **MIN:** finds the lowest value in a range.
+- **COUNT:** counts the number of cells in a range that contain numbers.
+- **COUNTA:** counts the number of non-empty cells in a range.
+- **CONCATENATE:** joins two or more strings together.
+
+## Advanced functions:
+- **VLOOKUP and HLOOKUP:** used to search for a value in a table and return a corresponding value from another column or row.
+- **INDEX and MATCH:** also used for table lookups.
+- **XLOOKUP:** a newer function that can be used as a replacement for VLOOKUP and HLOOKUP.
+- **IF:** used for conditional statements.
+- **SUMIF:** used for conditional sums.
+- **COUNTIF:** used for conditional counts.
+- **AVERAGEIF:** used for conditional averages.
+***
