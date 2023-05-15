@@ -159,4 +159,22 @@ Excel formulas and functions are powerful tools that allow users to perform vari
 - **SUMIF:** used for conditional sums.
 - **COUNTIF:** used for conditional counts.
 - **AVERAGEIF:** used for conditional averages.
+- 
+| Function           | Excel Formula                                   |
+|--------------------|-------------------------------------------------|
+| SUM                | `=SUM(range)`                                   |
+| AVERAGE            | `=AVERAGE(range)`                               |
+| MAX                | `=MAX(range)`                                   |
+| MIN                | `=MIN(range)`                                   |
+| COUNT              | `=COUNT(range)`                                 |
+| COUNTA             | `=COUNTA(range)`                                |
+| CONCATENATE        | `=CONCATENATE(text1, text2, ...)`                |
+| VLOOKUP            | `=VLOOKUP(lookup_value, table_range, col_index)` |
+| HLOOKUP            | `=HLOOKUP(lookup_value, table_range, row_index)` |
+| INDEX and MATCH    | `=INDEX(return_range, MATCH(lookup_value, lookup_range, 0))` |
+| XLOOKUP            | `=XLOOKUP(lookup_value, lookup_range, return_range)` |
+| IF                 | `=IF(condition, value_if_true, value_if_false)` |
+| SUMIF              | `=SUMIF(range, criteria, sum_range)`             |
+| COUNTIF            | `=COUNTIF(range, criteria)`                      |
+| AVERAGEIF          | `=AVERAGEIF(range, criteria, average_range)`     |
 ***
