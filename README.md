@@ -178,3 +178,49 @@ Excel formulas and functions are powerful tools that allow users to perform vari
 | COUNTIF            | `=COUNTIF(range, criteria)`                      |
 | AVERAGEIF          | `=AVERAGEIF(range, criteria, average_range)`     |
 ***
+##PIVOT TABLES IN EXCEL
+Pivot tables are a powerful feature in Excel that allow you to summarize and analyze large amounts of data in a structured and dynamic way. They provide a flexible and interactive way to organize, summarize, and extract insights from your data.
+
+1. **Data Source**: A pivot table requires a data source, which can be an Excel table, a range of cells, or an external data connection. The data should be organized in columns with headers.
+
+2. **Structure**: Pivot tables have a structure with rows, columns, values, and filters. These elements allow you to arrange and analyze your data in various ways.
+
+3. **Row and Column Fields**: You can select one or more columns from your data to be used as row or column fields in the pivot table. These fields determine the structure and grouping of the data in the table.
+
+4. **Value Field**: The value field represents the data that you want to summarize or perform calculations on. It could be a sum, average, count, maximum, minimum, or any other type of calculation.
+
+5. **Filters**: Filters allow you to narrow down the data displayed in the pivot table based on specific criteria. You can apply filters to one or more fields to focus on specific subsets of data.
+
+6. **Dynamic and Interactive**: Pivot tables are dynamic and interactive, meaning you can easily change the arrangement of the data by dragging and dropping fields. You can quickly switch rows and columns, add or remove fields, and modify calculations, providing real-time updates to the results.
+
+7. **Aggregation and Calculation**: Pivot tables automatically aggregate and summarize your data based on the selected fields and calculations. You can perform various calculations on the value field, such as sum, average, count, etc., to gain insights from the data.
+
+8. **Drill-Down**: Pivot tables allow you to drill down into the underlying data. By double-clicking on a cell, you can see the detailed data that makes up that value.
+
+Pivot tables are especially useful when dealing with large datasets and complex data analysis tasks. They enable you to quickly analyze and visualize data from different perspectives, identify patterns, trends, and outliers, and make data-driven decisions more effectively.
+
+![Screenshot (74)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/92b26264-5ac3-4098-8083-0ffe53bf9d3b)
+
+#WEEK2- TASK 1
+Using the sales dataset provided,carryout the following
+##FORMULAS & FUNCTION
+1. sum of product sold under government segment
+2. Average profit made in Canada
+3. Total number of sales made where gross sales is less than average
+##PIVOT TABLE
+1. Total discounts made available in each country
+2. Total revenue generated each months alongside the total profit
+
+#ANSWER
+| Calculation                                              | Excel Formula                                                             |
+|----------------------------------------------------------|---------------------------------------------------------------------------|
+| Sum of products sold under government segment             | `=SUMIF(SegmentRange, "Government", UNITSOLDRange)`                           |
+| Average profit made in Canada                             | `=AVERAGEIF(CountryRange, "Canada", ProfitRange)`                          |
+| Total number of sales where gross sale is less than average | `=COUNTIF(GrossSaleRange, "<" & AVERAGE(GrossSaleRange))`                  |
+![Screenshot (73)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/550538fa-39db-462c-b792-19f8db7a1ca9)
+
+PIVOT TABLE 1
+![image](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/235c81a3-2c6e-402d-a58e-e2dfe3da73ed)
+PIVOT TABLE 2
+![image](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/1301f52b-8557-474f-9725-83a8f72e1f0f)
+***
