@@ -63,8 +63,7 @@ and commands you need to work with Excel, while the Quick Access Toolbar provide
 2. **Entering Data:** To enter data in Excel, simply click on the cell where you want to enter data and start typing. You can enter text, numbers, dates, and formulas. To move to a different cell, use the arrow keys or click on the cell.
 3. **Formatting Data:** Excel allows you to format data to make it easier to read and analyze. You can change the font, size, and color of text, as well as the background color of cells. You can also apply number formats to display values in different formats,such as currency, percentages, or scientific notation.
 4. **Formulas and Functions:** Formulas are equations that perform calculations on data in Excel. Functions are pre-built formulas that perform specific calculations, such as SUM, AVERAGE, and COUNT. To create a formula or function, start by typing "=" in thecell where you want to display the result, and then enter the formula or function.
-5. **Charts and Graphs:** Excel allows you to create a wide range of charts and graphs to visualize your data. To create a chart, select the data you want to include in the chart,
-click on the Insert tab in the Ribbon, and select the chart type you want to create. You can then customize the chart by changing the chart type, adding titles and labels, and changing the colors and formatting.
+5. **Charts and Graphs:** Excel allows you to create a wide range of charts and graphs to visualize your data. To create a chart, select the data you want to include in the chart, click on the Insert tab in the Ribbon, and select the chart type you want to create. You can then customize the chart by changing the chart type, adding titles and labels, and changing the colors and formatting.
 6. **PivotTables:** PivotTables are a powerful tool for summarizing and analyzing large amounts of data. They allow you to quickly create custom reports that summarize data in different ways. To create a PivotTable, select the data you want to include in the PivotTable, click on the Insert tab in the Ribbon, and select PivotTable.
 7. **Macros:** Macros are sets of instructions that automate repetitive tasks in Excel. You can record a macro by selecting the Developer tab in the Ribbon, clicking on the Record
 Macro button, performing the actions you want to automate, and then stopping the macro recording.
@@ -89,12 +88,12 @@ basic steps you can follow to analyze a dataset using Excel:
 # WEEK 1 - EXCEL
 ## Task 1
 Create and populate a table (10 rows) with the following information
-*Student Name*
-*Age*
-*Height*
-*Year of birth*
-*Exam score*
-*Format Student names in ascending order
+1. *Student Name*
+2. *Age*
+3. *Height*
+4. *Year of birth*
+5. *Exam score*
+6. *Format Student names in ascending order
 *Calculate the total of the Exam score* and highlight the scores that are above average.
 ### Answer
 To solve the task, I created a student data using characters from [Avater the last air bender],I then used the sorting function to arrange the students name in ascending order and calulated both the  total exam score and average. Finally I used the average score to carry out a conditional formatting where only the student that scored above average were highlighted.
@@ -124,8 +123,8 @@ To solve the task,I used the sum function to calculate total revenue (SALES) and
 9. Show information for the product sold in Canada under the segment 'Enterprise' and ' Channel partners'for the month july.
 10. Set a rule for the month number columnb. The rule should allow only for values from (1 - 10): Show cells that did not meet with this condition using the data validation feature.
 ### Answer
-To solve this, i used the sumfunction to answer question 1-4,i calculated the average and used conditional formating to answer question 6&7, Iused the filter function to solve question 8 and 9 and finally I used data validation function to answer question 10.
-#### TASK 1-8,10
+To solve this, I used the sumfunction to answer question 1-4,I calculated the average and used conditional formating to answer question 6&7, I used the filter function to solve question 8 and 9 and finally I used data validation function to answer question 10.
+#### Week1 TASK 1-8,10
 
 ![week1question1-10](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/8baaf186-d707-4e50-9b81-1b1c19240c8c)
 
