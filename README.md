@@ -178,7 +178,7 @@ Excel formulas and functions are powerful tools that allow users to perform vari
 | COUNTIF            | `=COUNTIF(range, criteria)`                      |
 | AVERAGEIF          | `=AVERAGEIF(range, criteria, average_range)`     |
 ***
-##PIVOT TABLES IN EXCEL
+## PIVOT TABLES IN EXCEL
 Pivot tables are a powerful feature in Excel that allow you to summarize and analyze large amounts of data in a structured and dynamic way. They provide a flexible and interactive way to organize, summarize, and extract insights from your data.
 
 1. **Data Source**: A pivot table requires a data source, which can be an Excel table, a range of cells, or an external data connection. The data should be organized in columns with headers.
@@ -201,17 +201,17 @@ Pivot tables are especially useful when dealing with large datasets and complex 
 
 ![Screenshot (74)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/92b26264-5ac3-4098-8083-0ffe53bf9d3b)
 
-#WEEK2- TASK 1
+# WEEK2- TASK 1
 Using the sales dataset provided,carryout the following
-##FORMULAS & FUNCTION
+## FORMULAS & FUNCTION
 1. sum of product sold under government segment
 2. Average profit made in Canada
 3. Total number of sales made where gross sales is less than average
-##PIVOT TABLE
+## PIVOT TABLE
 1. Total discounts made available in each country
 2. Total revenue generated each months alongside the total profit
 
-#ANSWER
+# ANSWER
 | Calculation                                              | Excel Formula                                                             |
 |----------------------------------------------------------|---------------------------------------------------------------------------|
 | Sum of products sold under government segment             | `=SUMIF(SegmentRange, "Government", UNITSOLDRange)`                           |
