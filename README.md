@@ -159,8 +159,8 @@ Excel formulas and functions are powerful tools that allow users to perform vari
 - **SUMIF:** used for conditional sums.
 - **COUNTIF:** used for conditional counts.
 - **AVERAGEIF:** used for conditional averages.
-- 
-| Function           | Excel Formula                                   |
+ 
+| **Function**           |**Excel Formula**                                   |
 |--------------------|-------------------------------------------------|
 | SUM                | `=SUM(range)`                                   |
 | AVERAGE            | `=AVERAGE(range)`                               |
@@ -220,9 +220,9 @@ Using the sales dataset provided,carryout the following
 
 ![Screenshot (73)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/550538fa-39db-462c-b792-19f8db7a1ca9)
 
-###PIVOT TABLE 1
+### PIVOT TABLE 1
 ![image](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/235c81a3-2c6e-402d-a58e-e2dfe3da73ed)
 
-###PIVOT TABLE 2
+### PIVOT TABLE 2
 ![image](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/1301f52b-8557-474f-9725-83a8f72e1f0f)
 ***
