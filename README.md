@@ -89,13 +89,13 @@ basic steps you can follow to analyze a dataset using Excel:
 # WEEK 1 - EXCEL
 ## Task 1
 Create and populate a table (10 rows) with the following information
-● *Student Name*
-● *Age*
-● *Height*
-● *Year of birth*
-● *Exam score*
-● *Format Student names in ascending order
-● *Calculate the total of the Exam score* and highlight the scores that are above average.
+*Student Name*
+*Age*
+*Height*
+*Year of birth*
+*Exam score*
+*Format Student names in ascending order
+*Calculate the total of the Exam score* and highlight the scores that are above average.
 ### Answer
 To solve the task, I created a student data using characters from [Avater the last air bender],I then used the sorting function to arrange the students name in ascending order and calulated both the  total exam score and average. Finally I used the average score to carry out a conditional formatting where only the student that scored above average were highlighted.
 
