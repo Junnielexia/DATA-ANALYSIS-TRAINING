@@ -1,7 +1,8 @@
 # DATA-ANALYSIS-TRAINING
 ***
 Hi there my name is *Immaculata*, and I'm documenting my journey into data analysis on GitHub. I have always been interested in working with data and am excited to share my projects and insight with the community
-In this repository, you'll find my Excel projects, along with documentation on my process and insights. I hope that my journey will inspire others to explore the world of data science.&lt;
+In this repository, you'll find my Excel projects, along with documentation on my process and insights. I hope that my journey will inspire others to explore the world of data science.
+![image](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/4a80ed56-0376-4247-a1bf-50f5e8c7abe0)&lt;
 # Data Analysis
 ## Definition:
 **Data analysis** is the process of examining and interpreting data using various analytical and statistical techniques to extract meaningful insights and draw conclusions from the data.
