@@ -199,7 +199,7 @@ Pivot tables are a powerful feature in Excel that allow you to summarize and ana
 Pivot tables are especially useful when dealing with large datasets and complex data analysis tasks. They enable you to quickly analyze and visualize data from different perspectives, identify patterns, trends, and outliers, and make data-driven decisions more effectively.
 
 ![Screenshot (74)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/92b26264-5ac3-4098-8083-0ffe53bf9d3b)
-
+***
 ## PIVOT CHART
 Pivot charts are visual representations of data that are created from pivot tables in Excel. They provide a dynamic and interactive way to analyze and summarize large datasets. Pivot charts allow you to visualize trends, patterns, and relationships within your data, making it easier to derive insights and communicate information effectively.
 
@@ -223,7 +223,7 @@ Pivot charts are visual representations of data that are created from pivot tabl
 
 Pivot charts provide a visual representation of the summarized data in your pivot table, allowing you to identify trends, compare values, and present insights effectively. They are an essential tool for data analysis and reporting in Excel, as they enable you to transform raw data into meaningful visualizations.
 ![Screenshot (75)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/91427010-deb3-4494-bd49-b2e4ff771845)
-
+***
 # WEEK2- TASK 1
 Using the sales dataset provided,carryout the following
 ## FORMULAS & FUNCTION
@@ -235,11 +235,12 @@ Using the sales dataset provided,carryout the following
 2. Total revenue generated each months alongside the total profit
 
 # ANSWER
-| Calculation                                              | Excel Formula                                                             |
-|----------------------------------------------------------|---------------------------------------------------------------------------|
-|1. Sum of products sold under government segment             | `=SUMIF(SegmentRange, "Government", UNITSOLDRange)`                           |
-|2. Average profit made in Canada                             | `=AVERAGEIF(CountryRange, "Canada", ProfitRange)`                          |
-|3. Total number of sales where gross sale is less than average | `=COUNTIF(GrossSaleRange, "<" & AVERAGE(GrossSaleRange))`               
+| Calculation                                                  | Excel Formula                                                          |
+|--------------------------------------------------------------|------------------------------------------------------------------------|
+|1. Sum of products sold under government segment              | `=SUMIF(SegmentRange, "Government", UNITSOLDRange)`                    |
+|2. Average profit made in Canada                              | `=AVERAGEIF(CountryRange, "Canada", ProfitRange)`                      |
+|3. Total number of sales where gross sale is less than average| `=COUNTIF(GrossSaleRange, "<" & AVERAGE(GrossSaleRange))`              |
+
 ### Solution (Question 1,2,3)
 ![Screenshot (73)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/550538fa-39db-462c-b792-19f8db7a1ca9)
 
