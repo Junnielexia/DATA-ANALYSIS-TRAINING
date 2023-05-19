@@ -340,8 +340,5 @@ h. Order and Sales by Month
 ![Screenshot (84)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/7b665ef1-ed8e-41e2-b657-3a937808ae4f)
 ***
 **Fifth Analysis:** I created a dashboard representing the kpI and added interactivity to it by including search button for the customers,links and icons,slicers etc
-![image](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/bbfba7ca-5589-434b-a3fc-4beeacedd990)
 
-![image](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/94b2a0f1-76c3-483b-8771-72797e11c969)
-
-
+![image](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/bdfb4a3c-4eac-421e-9ec6-8c5040cce8e0)
