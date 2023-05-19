@@ -310,7 +310,7 @@ h. Order and Sales by Month
 ***
 # Answer
 **First Analysis:** The dataset looked pretty clean but for the Order date and ship date column which contained a combination of Text an Date. I solved this by creating a new column where I used the formula on the number 9 of the table below. the formula is an if statement that check each cell to determine if its a date or text, it allows the date and fix the text into a datevalue. I copied the the new column and paste special- values into the error column and then delete the new column.
-
+***
 **Second Analysis** To solve the business question 1-8 i used the folowing formula in the table below. 
 ## Business question 1-8
 | Number | Question                                      | Excel Formula                                                        |
@@ -326,7 +326,7 @@ h. Order and Sales by Month
 | 9      | Convert text and date to date in a column     | `=IF(ISNUMBER(A1), DATEVALUE(A1), DATEVALUE(TEXT(A1, "dd/mm/yyyy")))`|
 
 ![Screenshot (82)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/b64f1e52-b9d5-41c1-808b-6b293a8fd154)
-
+***
 **Third Analysis:** To solvre business question 9 I selected the data by using ctrl + shift + arrow left + arrow down, then i inserted the different pivot tables. for 9h i grouped the date filter to get months.
 **Business Question 9a-f**
 
@@ -335,7 +335,9 @@ h. Order and Sales by Month
 **Business Question 9g-h**
 
 ![Screenshot (80)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/bc3c2ad8-17d8-490c-ae37-498ad7281fef)
-
+***
 **Fourth Analysis:** I used thge 8 pivot tables to created a pivot chart for visualization of the data.
 ![Screenshot (84)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/7b665ef1-ed8e-41e2-b657-3a937808ae4f)
-
+***
+**Fifth Analysis:** I created a dashboard representing the kpI and added interactivity to it by including search button for the customers,links and icons,slicers etc
+![image](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/bbfba7ca-5589-434b-a3fc-4beeacedd990)
