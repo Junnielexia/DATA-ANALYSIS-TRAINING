@@ -488,8 +488,9 @@ INSERT INTO students (students_Id, first_name, last_name, Age, Exam_score, passi
 ### Task two
 1. insert 5 more rows of infformation into the table you already created
 2. update the Scores and Grades of the first 5 students in your Table to the following respectively ( scores: 60,65,50.5,45 and 71.5) (Grades: B,B,C,D and A)
-3. Show the first Names and Grades of every student
-4. show the records for students with the following GRades only (Grades : A and B)
+3. delete the records of student id 6,7,8,9,10
+4. Show the first Names and Grades of every student
+5. show the records for students with the following GRades only (Grades : A and B)
 #### ANSWER
 
 ### Task Two
@@ -510,6 +511,7 @@ INSERT INTO students (students_Id, first_name, last_name, Age, Exam_score, passi
     (15, 'TopI', 'Metalbender', 16, 88, 'B');
 ```
 ```
+![Screenshot (88)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/791059e4-5469-40ac-a24a-576b0ba59a0c)
 
 2. Update the Scores and Grades of the first 5 students in your table to the following respectively (scores: 60, 65, 50.5, 45, and 71.5) (Grades: B, B, C, D, and A).
 
@@ -539,8 +541,18 @@ SET Exam_score = CASE students_Id
 WHERE students_Id IN (1, 2, 3, 4, 5);
 ```
 ```
+![Screenshot (90)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/34cb8024-e2a6-4a1d-ba4d-8ab388c995a3)
 
-3. Show the first Names and Grades of every student.
+3.#### Answer - Deleting Records
+
+To delete the records of student IDs 6, 7, 8, 9, and 10 from the `students` table, you can use the `DELETE` statement as follows:
+
+```sql
+DELETE FROM students
+WHERE students_Id IN (6, 7, 8, 9, 10);
+![Screenshot (91)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/07dc6324-7a51-45ea-bca4-cd2f78cb7144)
+
+4. Show the first Names and Grades of every student.
 
 ```markdown
 #### Answer - Showing First Names and Grades
@@ -552,8 +564,9 @@ SELECT first_name, passing_grade
 FROM students;
 ```
 ```
+![Screenshot (92)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/05b7babd-b4d6-4c44-bf5d-98c71f9f6a99)
 
-4. Show the records for students with the following Grades only (Grades: A and B).
+5. Show the records for students with the following Grades only (Grades: A and B).
 
 ```markdown
 #### Answer - Showing Records for Grades A and B
@@ -566,4 +579,5 @@ FROM students
 WHERE passing_grade IN ('A', 'B');
 ```
 ```
+![Screenshot (92)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/e03f17b6-2677-4226-9862-cfafd1e4b5c1)
 
