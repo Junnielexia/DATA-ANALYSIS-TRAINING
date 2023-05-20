@@ -344,34 +344,135 @@ h. Order and Sales by Month
 ![image](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/bdfb4a3c-4eac-421e-9ec6-8c5040cce8e0)
 ***
 # MySQL
+Sure! Here's a guide on using MySQL Workbench for data analysis, formatted in Markdown for easy readability on GitHub:
 
-## Task one
-1. create a database named students information
-2. in  the database you have created, create a table  that has the following columns with the right data type. 
-3. students-Id
-4. first_name
-5. last_name
-6. Age
-7. Exam_score
-8. passing_grade(A, B, C, D) 
-9. populate the table for 10 students. 
+## MySQL Workbench for Data Analysts
+
+### Database Connection
+1. Launch MySQL Workbench and establish a connection to your MySQL database by clicking on "Database" and selecting "Connect to Database."
+
+### SQL Syntax and Execution
+1. Querying Data: Use the SQL `SELECT` statement to retrieve data from tables.
+```sql
+SELECT column1, column2
+FROM table_name
+WHERE condition;
+```
+
+2. Filtering Results: Utilize the `WHERE` clause to filter query results based on specific conditions.
+```sql
+SELECT column1, column2
+FROM table_name
+WHERE condition1 AND condition2;
+```
+
+3. Sorting Data: Apply the `ORDER BY` clause to sort query results in ascending or descending order.
+```sql
+SELECT column1, column2
+FROM table_name
+ORDER BY column1 ASC;
+```
+
+4. Aggregating Data: Aggregate data using functions such as `COUNT`, `SUM`, `AVG`, etc.
+```sql
+SELECT COUNT(column1), AVG(column2)
+FROM table_name
+GROUP BY column3;
+```
+
+5. Joining Tables: Combine data from multiple tables using different types of joins (`INNER JOIN`, `LEFT JOIN`, `RIGHT JOIN`, `FULL JOIN`).
+```sql
+SELECT *
+FROM table1
+JOIN table2 ON table1.column1 = table2.column2;
+```
+
+### Data Manipulation
+1. Inserting Data: Use the `INSERT INTO` statement to add new records to a table.
+```sql
+INSERT INTO table_name (column1, column2)
+VALUES (value1, value2);
+```
+
+2. Updating Data: Update existing records using the `UPDATE` statement.
+```sql
+UPDATE table_name
+SET column1 = new_value
+WHERE condition;
+```
+
+3. Deleting Data: Remove specific records from a table with the `DELETE` statement.
+```sql
+DELETE FROM table_name
+WHERE condition;
+```
+
+### Database Design
+1. Creating Tables: Use the `CREATE TABLE` statement to define the structure of a new table.
+```sql
+CREATE TABLE table_name (
+    column1 datatype,
+    column2 datatype,
+    ...
+);
+```
+
+2. Modifying Tables: Alter existing tables using `ALTER TABLE` statement to add, modify, or drop columns.
+```sql
+ALTER TABLE table_name
+ADD column_name datatype;
+
+ALTER TABLE table_name
+MODIFY COLUMN column_name datatype;
+
+ALTER TABLE table_name
+DROP COLUMN column_name;
+```
+
+### Exporting and Importing Data
+1. Exporting Data: Right-click on a table, select "Table Data Export Wizard," and choose the desired export format (e.g., CSV, SQL).
+
+2. Importing Data: Right-click on a table, select "Table Data Import Wizard," and follow the steps to import data from a file.
+
+### Visual Database Design
+1. Entity-Relationship Diagrams: Use the "Modeling" perspective to create Entity-Relationship (ER) diagrams and visually design the database schema.
+
+### Note: 
+This guide provides an overview of essential MySQL Workbench features and syntax commonly used by data analysts. However, MySQL Workbench offers additional functionalities for database administration, stored procedures, and more. For further information, consult the MySQL Workbench documentation.
+
+By following these guidelines, you can effectively leverage MySQL Workbench as a data analyst and document your knowledge on GitHub using Markdown formatting.
+***
+Here's the formatted text in Markdown:
+
+## Task One
+1. Create a database named `students_information`.
+2. In the database you have created, create a table that has the following columns with the right data type:
+   - `students_Id`
+   - `first_name`
+   - `last_name`
+   - `Age`
+   - `Exam_score`
+   - `passing_grade` (A, B, C, D).
+3. Populate the table for 10 students.
+
 ### Answer
+```sql
 -- Create the database
-CREATE DATABASE studentsinformation;
-USE Studentsinformation;
+CREATE DATABASE students_information;
+USE students_information;
 
 -- Create the students table
 CREATE TABLE students (
-    id INT PRIMARY KEY,
+    students_Id INT PRIMARY KEY,
     first_name VARCHAR(50),
     last_name VARCHAR(50),
-    age INT,
-    exam_score INT,
+    Age INT,
+    Exam_score INT,
     passing_grade CHAR(1)
 );
 
 -- Insert data into the students table
-INSERT INTO students (id, first_name, last_name, age, exam_score, passing_grade) VALUES
+INSERT INTO students (students_Id, first_name, last_name, Age, Exam_score, passing_grade) VALUES
     (1, 'Aang', 'Airbender', 112, 90, 'A'),
     (2, 'Katara', 'Waterbender', 15, 85, 'B'),
     (3, 'Sokka', 'Warrior', 16, 78, 'C'),
@@ -382,6 +483,6 @@ INSERT INTO students (id, first_name, last_name, age, exam_score, passing_grade)
     (8, 'Suki', 'Kyoshi Warrior', 16, 87, 'B'),
     (9, 'Mai', 'Assassin', 17, 84, 'B'),
     (10, 'Ty Lee', 'Circus Performer', 16, 82, 'C');
-    
-    ![Screenshot (86)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/7e598397-d14d-4506-b30a-990c85f3279b)
+```
+![Screenshot (86)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/7e598397-d14d-4506-b30a-990c85f3279b)
 
