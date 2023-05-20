@@ -382,3 +382,6 @@ INSERT INTO students (id, first_name, last_name, age, exam_score, passing_grade)
     (8, 'Suki', 'Kyoshi Warrior', 16, 87, 'B'),
     (9, 'Mai', 'Assassin', 17, 84, 'B'),
     (10, 'Ty Lee', 'Circus Performer', 16, 82, 'C');
+    
+    ![Screenshot (86)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/7e598397-d14d-4506-b30a-990c85f3279b)
+
