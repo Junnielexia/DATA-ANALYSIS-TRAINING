@@ -342,3 +342,43 @@ h. Order and Sales by Month
 **Fifth Analysis:** I created a dashboard representing the kpI and added interactivity to it by including search button for the customers,links and icons,slicers etc
 
 ![image](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/bdfb4a3c-4eac-421e-9ec6-8c5040cce8e0)
+***
+# MySQL
+
+## Task one
+1. create a database named students information
+2. in  the database you have created, create a table  that has the following columns with the right data type. 
+3. students-Id
+4. first_name
+5. last_name
+6. Age
+7. Exam_score
+8. passing_grade(A, B, C, D) 
+9. populate the table for 10 students. 
+### Answer
+-- Create the database
+CREATE DATABASE studentsinformation;
+USE Studentsinformation;
+
+-- Create the students table
+CREATE TABLE students (
+    id INT PRIMARY KEY,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    age INT,
+    exam_score INT,
+    passing_grade CHAR(1)
+);
+
+-- Insert data into the students table
+INSERT INTO students (id, first_name, last_name, age, exam_score, passing_grade) VALUES
+    (1, 'Aang', 'Airbender', 112, 90, 'A'),
+    (2, 'Katara', 'Waterbender', 15, 85, 'B'),
+    (3, 'Sokka', 'Warrior', 16, 78, 'C'),
+    (4, 'Toph', 'Beifong', 12, 92, 'A'),
+    (5, 'Zuko', 'Firebender', 17, 88, 'B'),
+    (6, 'Azula', 'Firebender', 14, 95, 'A'),
+    (7, 'Iroh', 'Dragon', 60, 89, 'B'),
+    (8, 'Suki', 'Kyoshi Warrior', 16, 87, 'B'),
+    (9, 'Mai', 'Assassin', 17, 84, 'B'),
+    (10, 'Ty Lee', 'Circus Performer', 16, 82, 'C');
