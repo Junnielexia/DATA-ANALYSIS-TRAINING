@@ -510,8 +510,6 @@ INSERT INTO students (students_Id, first_name, last_name, Age, Exam_score, passi
     (14, 'KatarI', 'Healer', 20, 90, 'A'),
     (15, 'TopI', 'Metalbender', 16, 88, 'B');
 ```
-```
-
 ![Screenshot (88)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/791059e4-5469-40ac-a24a-576b0ba59a0c)
 
 2. Update the Scores and Grades of the first 5 students in your table to the following respectively (scores: 60, 65, 50.5, 45, and 71.5) (Grades: B, B, C, D, and A).
@@ -541,8 +539,6 @@ SET Exam_score = CASE students_Id
     END
 WHERE students_Id IN (1, 2, 3, 4, 5);
 ```
-```
-
 ![Screenshot (90)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/34cb8024-e2a6-4a1d-ba4d-8ab388c995a3)
 
 3.#### Answer - Deleting Records
@@ -566,7 +562,6 @@ To display the first names and grades of every student, you can use the followin
 SELECT first_name, passing_grade
 FROM students;
 ```
-```
 
 ![Screenshot (92)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/05b7babd-b4d6-4c44-bf5d-98c71f9f6a99)
 
@@ -582,7 +577,5 @@ SELECT *
 FROM students
 WHERE passing_grade IN ('A', 'B');
 ```
-```
-
 ![Screenshot (92)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/e03f17b6-2677-4226-9862-cfafd1e4b5c1)
 
