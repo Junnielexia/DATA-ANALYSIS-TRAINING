@@ -344,7 +344,6 @@ h. Order and Sales by Month
 ![image](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/bdfb4a3c-4eac-421e-9ec6-8c5040cce8e0)
 ***
 # MySQL
-Sure! Here's a guide on using MySQL Workbench for data analysis, formatted in Markdown for easy readability on GitHub:
 
 ## MySQL Workbench for Data Analysts
 
@@ -485,4 +484,86 @@ INSERT INTO students (students_Id, first_name, last_name, Age, Exam_score, passi
     (10, 'Ty Lee', 'Circus Performer', 16, 82, 'C');
 ```
 ![Screenshot (86)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/7e598397-d14d-4506-b30a-990c85f3279b)
+***
+### Task two
+1. insert 5 more rows of infformation into the table you already created
+2. update the Scores and Grades of the first 5 students in your Table to the following respectively ( scores: 60,65,50.5,45 and 71.5) (Grades: B,B,C,D and A)
+3. Show the first Names and Grades of every student
+4. show the records for students with the following GRades only (Grades : A and B)
+#### ANSWER
+
+### Task Two
+
+1. Insert 5 more rows of information into the table you already created.
+
+```markdown
+#### Answer - Inserting 5 More Rows
+
+To insert 5 more rows into the existing table, you can use the following syntax:
+
+```sql
+INSERT INTO students (students_Id, first_name, last_name, Age, Exam_score, passing_grade) VALUES
+    (11, 'SokkI', 'Swordmaster', 18, 85, 'B'),
+    (12, 'ZukI', 'Firelord', 19, 92, 'A'),
+    (13, 'AzulI', 'Princess', 17, 78, 'C'),
+    (14, 'KatarI', 'Healer', 20, 90, 'A'),
+    (15, 'TopI', 'Metalbender', 16, 88, 'B');
+```
+```
+
+2. Update the Scores and Grades of the first 5 students in your table to the following respectively (scores: 60, 65, 50.5, 45, and 71.5) (Grades: B, B, C, D, and A).
+
+```markdown
+#### Answer - Updating Scores and Grades
+
+To update the scores and grades of the first 5 students in your table, you can use the following syntax:
+
+```sql
+UPDATE students
+SET Exam_score = CASE students_Id
+    WHEN 1 THEN 60
+    WHEN 2 THEN 65
+    WHEN 3 THEN 50.5
+    WHEN 4 THEN 45
+    WHEN 5 THEN 71.5
+    ELSE Exam_score
+    END,
+    passing_grade = CASE students_Id
+    WHEN 1 THEN 'B'
+    WHEN 2 THEN 'B'
+    WHEN 3 THEN 'C'
+    WHEN 4 THEN 'D'
+    WHEN 5 THEN 'A'
+    ELSE passing_grade
+    END
+WHERE students_Id IN (1, 2, 3, 4, 5);
+```
+```
+
+3. Show the first Names and Grades of every student.
+
+```markdown
+#### Answer - Showing First Names and Grades
+
+To display the first names and grades of every student, you can use the following syntax:
+
+```sql
+SELECT first_name, passing_grade
+FROM students;
+```
+```
+
+4. Show the records for students with the following Grades only (Grades: A and B).
+
+```markdown
+#### Answer - Showing Records for Grades A and B
+
+To retrieve the records for students with grades A and B only, you can use the following syntax:
+
+```sql
+SELECT *
+FROM students
+WHERE passing_grade IN ('A', 'B');
+```
+```
 
