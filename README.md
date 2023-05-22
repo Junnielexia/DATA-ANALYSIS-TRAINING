@@ -438,8 +438,6 @@ DROP COLUMN column_name;
 
 ### Note: 
 This guide provides an overview of essential MySQL Workbench features and syntax commonly used by data analysts. However, MySQL Workbench offers additional functionalities for database administration, stored procedures, and more. For further information, consult the MySQL Workbench documentation.
-
-By following these guidelines, you can effectively leverage MySQL Workbench as a data analyst and document your knowledge on GitHub using Markdown formatting.
 ***
 Here's the formatted text in Markdown:
 
@@ -497,7 +495,7 @@ INSERT INTO students (students_Id, first_name, last_name, Age, Exam_score, passi
 
 1. Insert 5 more rows of information into the table you already created.
 
-```markdown
+```
 #### Answer - Inserting 5 More Rows
 
 To insert 5 more rows into the existing table, you can use the following syntax:
@@ -514,7 +512,7 @@ INSERT INTO students (students_Id, first_name, last_name, Age, Exam_score, passi
 
 2. Update the Scores and Grades of the first 5 students in your table to the following respectively (scores: 60, 65, 50.5, 45, and 71.5) (Grades: B, B, C, D, and A).
 
-```markdown
+```
 #### Answer - Updating Scores and Grades
 
 To update the scores and grades of the first 5 students in your table, you can use the following syntax:
@@ -553,7 +551,7 @@ WHERE students_Id IN (6, 7, 8, 9, 10);
 
 4. Show the first Names and Grades of every student.
 
-```markdown
+```
 #### Answer - Showing First Names and Grades
 
 To display the first names and grades of every student, you can use the following syntax:
@@ -567,7 +565,7 @@ FROM students;
 
 5. Show the records for students with the following Grades only (Grades: A and B).
 
-```markdown
+```
 #### Answer - Showing Records for Grades A and B
 
 To retrieve the records for students with grades A and B only, you can use the following syntax:
@@ -577,5 +575,5 @@ SELECT *
 FROM students
 WHERE passing_grade IN ('A', 'B');
 ```
-![Screenshot (92)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/e03f17b6-2677-4226-9862-cfafd1e4b5c1)
+![Screenshot (93)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/c01088da-6dfa-4d3f-80ac-d1f7093b8da3)
 
