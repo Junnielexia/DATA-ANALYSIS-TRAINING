@@ -10,21 +10,19 @@ In this repository, you'll find my Excel projects along with documentation on my
 
 If you have any questions or suggestions, feel free to reach out. Happy exploring!
 
-<span style="color:#003049"><h1>Data Analysis</h1></span>
+# Data Analysis
 
-<span style="color:#D62828"><h2>Definition:</h2></span>
-<span style="color:#2E4053"><strong>Data analysis</strong></span> is the process of examining and interpreting data using various analytical and statistical techniques to extract meaningful insights and draw conclusions from the data.
+## Definition:
+Data analysis is the process of examining and interpreting data using various analytical and statistical techniques to extract meaningful insights and draw conclusions from the data. This involves collecting, cleaning, organizing, and transforming data into a format that is suitable for analysis. The goal of data analysis is to uncover patterns, relationships, and trends in the data that can be used to make informed decisions or predictions. Data analysis is widely used in various fields such as business, finance, healthcare, science, and social sciences, among others, to gain insights into complex phenomena and inform decision-making processes.
 
-This involves collecting, cleaning, organizing, and transforming data into a format that is suitable for analysis. The goal of data analysis is to uncover patterns, relationships, and trends in the data that can be used to make informed decisions or predictions.
+---
 
-Data analysis is widely used in various fields such as business, finance, healthcare, science, and social sciences, among others, to gain insights into complex phenomena and inform decision-making processes.
+## Documenting your project:
+Creating a .com website  
+GitHub  
+Others include (e.g., Carrd, Wix, Google Sites, Medium, etc.)
 
-<span style="color:#D62828"><h2>Documenting your project:</h2></span>
-To document your project, you can create a .com website using platforms like GitHub, Carrd, Wix, Google Sites, Medium, etc. These platforms provide a user-friendly interface to showcase your data analysis projects and share your insights with the community.
-
-Feel free to explore these options and choose the one that best suits your needs. Happy documenting!
-
-## Important aspects of Data Analysis
+## Important aspects of Data Analysis:
 1. **Data Collection :** This involves gathering data from various sources such as surveys,experiments, observation, databases, and web scraping. It is important to ensure that the data collected is reliable, accurate, and relevant to the research question or problem being investigated.
 2. **Data Cleaning:** This is the process of identifying and correcting errors, inconsistencies, missing values, and outliers in the data. Data cleaning is essential to ensure that the data is of high quality and suitable for analysis.
 3. **Data Exploration:** This involves visualizing and summarizing the data using various techniques such as histograms, box plots, scatterplots, and summary statistics. Data exploration helps to identify patterns, trends, and relationships in the data.
@@ -34,7 +32,8 @@ Feel free to explore these options and choose the one that best suits your needs
 7. **Machine Learning:** This involves building predictive models using algorithms and statistical models to analyze and make predictions based on the data.
 By understanding these subheadings, you can gain a solid foundation in data analysis and develop the skills necessary to conduct meaningful analysis and draw insightful conclusions from data.
  ***
-## Software and Tools you need to learn
+ 
+## Software and Tools you need to learn:
 here's a suggested order for learning the tools and subheadings in data analysis:
 1. **Spreadsheet Software:** Start by learning how to use spreadsheet software such as Microsoft Excel or Google Sheets. These tools can be used for basic data analysis tasks such as data cleaning, transformation, and visualization.
 2. **SQL:** Once you're comfortable with spreadsheet software, learn SQL (Structured Query Language). SQL is a programming language used to manage and manipulate data stored in relational databases. It's a fundamental tool for data analysts, and it's important to learn how to write SQL queries to extract data and perform data analysis tasks.
@@ -44,7 +43,7 @@ here's a suggested order for learning the tools and subheadings in data analysis
 6. **Cloud-Based Services:** Finally, consider learning about cloud-based services such as Amazon Web Services (AWS) or Microsoft Azure. These services provide access to powerful computing resources, storage, and data analysis tools, making it easy to perform large-scale data analysis tasks.
 By following this order, you can build a solid foundation in data analysis and develop the skills necessary to perform meaningful analysis and draw insightful conclusions from data.
 ***
-# Software Installation
+# Software Installation:
 Below are links to short YouTube videos that will help you with the installation of Excel, SQL and PowerBI .
 ***If you cannot afford to pay for it, the video on Excel provides an alternative way to have Excel running and working for you***
 [Excel:](https://youtu.be/pL3HmenP7ro)
@@ -66,7 +65,7 @@ make it easier to analyze.
 5. **Macros:** Macros are sets of instructions that automate repetitive tasks in Excel. They can be used to speed up data analysis tasks and improve efficiency.
 6. **Add-ins:** Excel has a range of add-ins that can be installed to extend its functionality. These add-ins can be used for specific tasks such as data analysis, financial modeling, and statistical analysis. By mastering these features, you can use Excel to perform a wide range of data-related tasks, from basic data entry to complex data analysis and visualization.
 ***
-## A Beginner guide to excel
+## A Beginner guide to excel:
 Sure! Let's start with the basics:
 1. **The Excel Interface:** The Excel interface is made up of several elements, includin the Ribbon, Quick Access Toolbar, and Worksheet. The Ribbon contains all of the tools
 and commands you need to work with Excel, while the Quick Access Toolbar provides easy access to frequently used commands. The Worksheet is where you enter and manipulate data.
@@ -86,7 +85,7 @@ Macro button, performing the actions you want to automate, and then stopping the
 5. **VBA Programming:** Visual Basic for Applications (VBA) is a programming language that can be used to automate tasks in Excel. With VBA, you can create custom functions, automate data entry tasks, and even build custom user interfaces.
 6. **Power Query and Power Pivot:** Power Query and Power Pivot are advanced Excel features that allow you to perform complex data transformations and create custom data models. Power Query allows you to connect to external data sources and transform data before bringing it into Excel, while Power Pivot allows you to create relationships between tables and perform advanced calculations.
 ***
-# A practical guide to Analsing a dataset in excel
+# A practical guide to Analsing a dataset in excel:
 basic steps you can follow to analyze a dataset using Excel:
 1. **Prepare your data:** Before you can analyze your data, you need to make sure it's in the right format. This means cleaning and organizing your data so that it's easy to work with. You can use Excel's data cleaning and formatting tools to do this.
 2. **Import your data:** If your data is in an external file, you need to import it into Excel. You can do this using Excel's built-in import tools, which allow you to import data from a variety of sources, including CSV files, databases, and web pages.
@@ -96,6 +95,7 @@ basic steps you can follow to analyze a dataset using Excel:
 6. **Draw conclusions:** After you have analyzed your data, you can draw conclusions and make decisions based on your findings. You can use your PivotTable and other Excel tools to identify patterns, trends, and outliers in your data, and make informed decisions based on your analysis.
 ***
 # WEEK 1 - EXCEL
+
 ## Task 1
 Create and populate a table (10 rows) with the following information
 1. *Student Name*
@@ -111,6 +111,7 @@ To solve the task, I created a student data using characters from [Avater the la
 ![Screenshot (65)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/70dde911-1b43-4eaa-9677-79241519b382)
 
 ***
+
 ## Task 2 BUSINESS CASE
 1. calculate the total revenue and profit Generated by company X.
 2. Highlight cells where the unit sold are greater than average.
@@ -142,7 +143,7 @@ To solve this, I used the sumfunction to answer question 1-4,I calculated the av
 
 ![week1question9](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/3052a3e0-5756-45c3-9cd8-ba9f184f027e)
 ***
-# WEEK 2 - EXCEL formulas and function
+# WEEK 2 - EXCEL formulas and function:
 Excel formulas and functions are powerful tools that allow users to perform various calculations and operations within spreadsheets. Here are some important concepts and functions you should be aware of:
 
 - **BODMAS:** This stands for Bracket, Order, Division, Multiplication, Addition, and Subtraction. It is a mathematical rule used to determine the order of operations when evaluating mathematical expressions.
@@ -160,7 +161,7 @@ Excel formulas and functions are powerful tools that allow users to perform vari
 - **COUNTA:** counts the number of non-empty cells in a range.
 - **CONCATENATE:** joins two or more strings together.
 
-## Advanced functions:
+## Advanced Functions:
 - **VLOOKUP and HLOOKUP:** used to search for a value in a table and return a corresponding value from another column or row.
 - **INDEX and MATCH:** also used for table lookups.
 - **XLOOKUP:** a newer function that can be used as a replacement for VLOOKUP and HLOOKUP.
@@ -169,7 +170,7 @@ Excel formulas and functions are powerful tools that allow users to perform vari
 - **COUNTIF:** used for conditional counts.
 - **AVERAGEIF:** used for conditional averages.
  
-| **Function**           |**Excel Formula**                                   |
+| **Function**       |**Excel Formula**                                |
 |--------------------|-------------------------------------------------|
 | SUM                | `=SUM(range)`                                   |
 | AVERAGE            | `=AVERAGE(range)`                               |
@@ -177,9 +178,9 @@ Excel formulas and functions are powerful tools that allow users to perform vari
 | MIN                | `=MIN(range)`                                   |
 | COUNT              | `=COUNT(range)`                                 |
 | COUNTA             | `=COUNTA(range)`                                |
-| CONCATENATE        | `=CONCATENATE(text1, text2, ...)`                |
-| VLOOKUP            | `=VLOOKUP(lookup_value, table_range, col_index)` |
-| HLOOKUP            | `=HLOOKUP(lookup_value, table_range, row_index)` |
+| CONCATENATE        | `=CONCATENATE(text1, text2, ...)`               |
+| VLOOKUP            | `=VLOOKUP(lookup_value, table_range, col_index)`|
+| HLOOKUP            | `=HLOOKUP(lookup_value, table_range, row_index)`|
 | INDEX and MATCH    | `=INDEX(return_range, MATCH(lookup_value, lookup_range, 0))` |
 | XLOOKUP            | `=XLOOKUP(lookup_value, lookup_range, return_range)` |
 | IF                 | `=IF(condition, value_if_true, value_if_false)` |
@@ -187,7 +188,7 @@ Excel formulas and functions are powerful tools that allow users to perform vari
 | COUNTIF            | `=COUNTIF(range, criteria)`                      |
 | AVERAGEIF          | `=AVERAGEIF(range, criteria, average_range)`     |
 ***
-## PIVOT TABLES IN EXCEL
+## PIVOT TABLES IN EXCEL:
 Pivot tables are a powerful feature in Excel that allow you to summarize and analyze large amounts of data in a structured and dynamic way. They provide a flexible and interactive way to organize, summarize, and extract insights from your data.
 
 1. **Data Source**: A pivot table requires a data source, which can be an Excel table, a range of cells, or an external data connection. The data should be organized in columns with headers.
@@ -210,7 +211,7 @@ Pivot tables are especially useful when dealing with large datasets and complex 
 
 ![Screenshot (74)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/92b26264-5ac3-4098-8083-0ffe53bf9d3b)
 ***
-## PIVOT CHART
+## PIVOT CHART:
 Pivot charts are visual representations of data that are created from pivot tables in Excel. They provide a dynamic and interactive way to analyze and summarize large datasets. Pivot charts allow you to visualize trends, patterns, and relationships within your data, making it easier to derive insights and communicate information effectively.
 
 ### Here's how to use pivot charts in Excel:
@@ -234,6 +235,7 @@ Pivot charts are visual representations of data that are created from pivot tabl
 Pivot charts provide a visual representation of the summarized data in your pivot table, allowing you to identify trends, compare values, and present insights effectively. They are an essential tool for data analysis and reporting in Excel, as they enable you to transform raw data into meaningful visualizations.
 ![Screenshot (75)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/91427010-deb3-4494-bd49-b2e4ff771845)
 ***
+```
 # WEEK2- TASK 1
 Using the sales dataset provided,carryout the following
 ## FORMULAS & FUNCTION
@@ -243,7 +245,7 @@ Using the sales dataset provided,carryout the following
 ## PIVOT TABLE
 1. Total discounts made available in each country
 2. Total revenue generated each months alongside the total profit
-
+```
 # ANSWER
 | Calculation                                                  | Excel Formula                                                          |
 |--------------------------------------------------------------|------------------------------------------------------------------------|
@@ -293,7 +295,8 @@ Remember to iterate and refine your dashboard based on feedback and changing req
 
 Creating Excel dashboards allows you to present data in a compelling and meaningful way, empowering decision-makers with actionable insights.
 ***
-# Full Excel Project 
+# Full Excel Project
+```
  ## PROJECT DETAILS
 ## Requirements:
 Using the Superstore Sales Dataset provided, carefully analyze and provide answers to the following questions
@@ -313,7 +316,9 @@ e. Ship modes and their preference by customers
 f. How sales vary by segment
 g. Order and Sales by Year
 h. Order and Sales by Month
-10. Build an interactive dashboard showing the insights above
+10. Build an interactive dashboard showing the insights above.
+```
+
 ![Screenshot (77)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/bb9a6a57-99f8-4349-961d-5d89871e5f53)
 
 ***
