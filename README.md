@@ -1,8 +1,15 @@
 # DATA-ANALYSIS-TRAINING
 ***
-Hi there my name is *Immaculata*, and I'm documenting my journey into data analysis on GitHub. I have always been interested in working with data and am excited to share my projects and insight with the community
-In this repository, you'll find my Excel projects, along with documentation on my process and insights. I hope that my journey will inspire others to explore the world of data science.
-![image](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/4a80ed56-0376-4247-a1bf-50f5e8c7abe0)&lt;
+# Welcome to My Data Analysis Journey!
+
+Hi there! My name is **Immaculata**, and I'm documenting my journey into data analysis on GitHub. I have always been interested in working with data and am excited to share my projects and insights with the community.
+
+In this repository, you'll find my Excel projects along with documentation on my process and insights. I hope that my journey will inspire others to explore the world of data science.
+
+![Data Analysis Journey](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/4a80ed56-0376-4247-a1bf-50f5e8c7abe0)
+
+If you have any questions or suggestions, feel free to reach out. Happy exploring!
+
 # Data Analysis
 ## Definition:
 **Data analysis** is the process of examining and interpreting data using various analytical and statistical techniques to extract meaningful insights and draw conclusions from the data.
@@ -342,6 +349,20 @@ h. Order and Sales by Month
 **Fifth Analysis:** I created a dashboard representing the kpI and added interactivity to it by including search button for the customers,links and icons,slicers etc
 
 ![image](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/bdfb4a3c-4eac-421e-9ec6-8c5040cce8e0)
+
+**Sixth Analyis:** It is important to use rhyming color pallete to create a coherent visuals for the dashboards. This pallete are availaibe in sites like coolor.co and all that is needed is copying paste it in the customizwe color option of excel.
+to imrove the visualization on my dashboard i used this color pallette
+
+| Name         | Color Code |
+|--------------|------------|
+| Dark Teal    | #2C6E49    |
+| Forest Green | #4C956C    |
+| Cream        | #FEFEE3    |
+| Peach        | #FFC9B9    |
+| Copper       | #D68C45    |
+
+![image](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/a16b10ca-7176-42f6-8c8b-aef1864e2baa)
+
 ***
 # MySQL
 
