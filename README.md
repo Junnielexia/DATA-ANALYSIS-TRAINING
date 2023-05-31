@@ -818,6 +818,7 @@ h.	How many employees were hired each year?
 
 ## 5.	DATA QUERYING
 Think of additional questions and provide answers to them. Use your knowledge of CTEs, Subqueries, Aggregate functions e.t.c to flex your overall knowledge of SQL.
+
 5.	Which employees have salaries higher than the average salary in their respective departments?
 6.	What is the highest salary in each department, and which employees earn that salary?
 
