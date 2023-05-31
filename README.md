@@ -605,3 +605,222 @@ WHERE passing_grade IN ('A', 'B');
 ```
 ![Screenshot (93)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/c01088da-6dfa-4d3f-80ac-d1f7093b8da3)
 
+ # SQL PROJECT DETAILS
+``` For this project, you are going to demonstrate the knowledge of the following concepts in SQL;
+## 1.	DATABASE DESIGN
+Create an EMPLOYEES_INFORMATION database 
+Create 3 tables in this database: Employees, Department and Salary
+Insert the following information into the tables specified:
+```
+### a.	EMPLOYEES;
+```
+INSERT INTO Employees (employee_id, name, email, phone_number, hire_date, department_id)
+VALUES
+  (1, 'John Smith', 'john.smith@example.com', '555-1234', '2021-07-15', 1),
+  (2, 'Jane Doe', 'jane.doe@example.com', '555-5678', '2022-02-28', 1),
+  (3, 'Michael Johnson', 'michael.johnson@example.com', '555-9012', '2021-11-10', 2),
+  (4, 'Emily Davis', 'emily.davis@example.com', '555-3456', '2023-01-07', 3),
+  (5, 'Daniel Brown', 'daniel.brown@example.com', '555-7890', '2022-09-22', 1),
+  (6, 'Sophia Wilson', 'sophia.wilson@example.com', '555-2345', '2021-06-18', 2),
+  (7, 'Oliver Taylor', 'oliver.taylor@example.com', '555-6789', '2022-05-11', 2),
+  (8, 'Isabella Anderson', 'isabella.anderson@example.com', '555-0123', '2021-09-03', 3),
+  (9, 'James Martinez', 'james.martinez@example.com', '555-4567', '2021-08-29', 4),
+  (10, 'Mia Johnson', 'mia.johnson@example.com', '555-8901', '2023-03-14', 1),
+  (11, 'Alexander Davis', 'alexander.davis@example.com', '555-2345', '2022-11-19', 2),
+  (12, 'Sofia Thompson', 'sofia.thompson@example.com', '555-6789', '2023-02-08', 3),
+  (13, 'Emma Moore', 'emma.moore@example.com', '555-0123', '2021-10-25', 4),
+  (14, 'Benjamin Lee', 'benjamin.lee@example.com', '555-4567', '2022-12-30', 1),
+  (15, 'Ava Hill', 'ava.hill@example.com', '555-8901', '2022-08-02', 2),
+  (16, 'William Walker', 'william.walker@example.com', '555-2345', '2021-12-17', 3),
+  (17, 'Charlotte Hernandez', 'charlotte.hernandez@example.com', '555-6789', '2023-01-20', 4),
+  (18, 'Henry Gonzalez', 'henry.gonzalez@example.com', '555-0123', '2021-07-27', 1),
+  (19, 'Luna Wilson', 'luna.wilson@example.com', '555-4567', '2022-05-06', 2),
+  (20, 'Elijah Clark', 'elijah.clark@example.com', '555-8901', '2021-11-30', 3),
+  (21, 'Scarlett Moore', 'scarlett.moore@example.com', '555-2345', '2022-04-21', 4),
+  (
+  22, 'Lucas Baker', 'lucas.baker@example.com', '555-6789', '2023-03-09', 1),
+  (23, 'Mila Scott', 'mila.scott@example.com', '555-0123', '2022-01-13', 2),
+  (24, 'Jackson Green', 'jackson.green@example.com', '555-4567', '2021-10-09', 3),
+  (25, 'Penelope Adams', 'penelope.adams@example.com', '555-8901', '2023-02-05', 4),
+  (26, 'Gabriel Hall', 'gabriel.hall@example.com', '555-2345', '2022-09-18', 1),
+  (27, 'Aria Mitchell', 'aria.mitchell@example.com', '555-6789', '2021-06-24', 2),
+  (28, 'Carter Perez', 'carter.perez@example.com', '555-0123', '2023-03-17', 3),
+  (29, 'Madison Wright', 'madison.wright@example.com', '555-4567', '2022-05-22', 4),
+  (30, 'Leo King', 'leo.king@example.com', '555-8901', '2021-11-25', 1),
+  (31, 'Layla Lopez', 'layla.lopez@example.com', '555-2345', '2022-08-08', 2),
+  (32, 'Jack Young', 'jack.young@example.com', '555-6789', '2021-09-12', 3),
+  (33, 'Victoria Turner', 'victoria.turner@example.com', '555-0123', '2022-04-28', 4),
+  (34, 'Josiah Morgan', 'josiah.morgan@example.com', '555-4567', '2022-10-16', 1),
+  (35, 'Nora Lewis', 'nora.lewis@example.com', '555-8901', '2021-07-02', 2),
+  (36, 'Ethan Carter', 'ethan.carter@example.com', '555-2345', '2022-11-14', 3),
+  (37, 'Hannah Hall', 'hannah.hall@example.com', '555-6789', '2022-01-07', 4),
+  (38, 'Samuel Perez', 'samuel.perez@example.com', '555-0123', '2021-08-18', 1),
+  (39, 'Grace Wright', 'grace.wright@example.com', '555-4567', '2022-03-05', 2),
+  (40, 'Wyatt King', 'wyatt.king@example.com', '555-8901', '2022-09-26', 3),
+  (41, 'Evelyn Lopez', 'evelyn.lopez@example.com', '555-2345', '2022-06-12', 4),
+  (42, 'Sebastian Young', 'sebastian.young@example.com', '555-6789', '2023-04-29', 1),
+  (43, 'Addison Turner', 'addison.turner@example.com', '555-0123', '2021-12-24', 2),
+  (44, 'Joseph Morgan', 'joseph.morgan@example.com', '555-4567', '2023-02-19', 3),
+  (45, 'Avery Lewis', 'avery.lewis@example.com', '555-8901', '2021-10-14', 4),
+  (46, 'Levi Carter', 'levi.carter@example.com', '555-2345', '2022-07-27', 1),
+  (47, 'Aubrey Hall', 'aubrey.hall@example.com', '555-6789', '2021-12-08', 2),
+  (48, 'Elizabeth Perez', 'elizabeth.perez@example.com', '555-0123', '2022-08-23', 3),
+  (49, 'Owen Wright', 'owen.wright@example.com', '555-4567', '2021-07-17', 4),
+  (50, 'Ryan King', 'ryan.king@example.com', '555-8901', '2023-03-20', 1),
+  (51, 'Scarlett Lopez', 'scarlett.lopez@example.com', '555-2345', '2021-10-24', 2),
+  (52, 'Liam Young', 'liam.young@example.com', '555-6789', '2021-09-05', 3),
+  (53, 'Ella Turner', 'ella.turner@example.com', '555-0123', '2023-01-27', 4),
+  (54, 'Noah Morgan', 'noah.morgan@example.com', '555-4567', '2022-03-13', 1),
+  (55, 'Chloe Lewis', 'chloe.lewis@example.com', '555-8901', '2022-12-07', 2),
+  (56, 'Mason Carter', 'mason.carter@example.com', '555-2345', '2023-03-03', 3),
+  (57, 'Lucy Hall', 'lucy.hall@example.com', '555-6789', '2021-12-30', 4),
+  (58, 'Logan Perez', 'logan.perez@example.com', '555-0123', '2022-06-23', 1),
+  (59, 'Harper Wright', 'harper.wright@example.com', '555-4567', '2021-07-20', 2),
+  (60, 'Evelyn King', 'evelyn.king@example.com', '555-8901', '2022-10-30', 3),
+  (61, 'Oliver Lopez', 'oliver.lopez@example.com', '555-2345', '2023-01-15', 4),
+  (62, 'Amelia Young', 'amelia.young@example.com', '555-6789', '2021-11-28', 1),
+  (63, 'Mia Turner', 'mia.turner@example.com', '555-0123', '2022-09-08', 2),
+  (64, 'Sebastian Morgan', 'sebastian.morgan@example.com', '555-4567', '2021-09-02', 3),
+  (65, 'Charlotte Lewis', 'charlotte.lewis@example.com', '555-8901', '2023-02-05', 4),
+  (66, 'Henry Carter', 'henry.carter@example.com', '555-2345', '2021-08-10', 1),
+  (67, 'Luna Hall', 'luna.hall@example.com', '555-6789', '2022-07-23', 2),
+  (68, 'Elijah Perez', 'elijah.perez@example.com', '555-0123', '2022-04-18', 3),
+  (69, 'Stella Wright', 'stella.wright@example.com', '555-4567', '2021-10-05', 4),
+  (70, 'Samuel King', 'samuel.king@example.com', '555-8901', '2022-11-27', 1),
+  (71, 'Hazel Lopez', 'hazel.lopez@example.com', '555-2345', '2022-08-13', 2),
+  (72, 'Aiden Young', 'aiden.young@example.com', '555-6789', '2021-07-28', 3),
+  (73, 'Lucy Turner', 'lucy.turner@example.com', '555-0123', '2023-01-19', 4),
+  (74, 'Benjamin Morgan', 'benjamin.morgan@example.com', '555-4567', '2022-03-08', 1),
+  (75, 'Nora Lewis', 'nora.lewis@example.com', '555-8901', '2021-07-02', 2),
+  (76, 'Ethan Carter', 'ethan.carter@example.com', '555-2345', '2022-11-14', 3),
+  (77, 'Hannah Hall', 'hannah.hall@example.com', '555-6789', '2022-01-07', 4),
+  (78, 'Samuel Perez', 'samuel.perez@example.com', '555-0123', '2021-08-18', 1),
+  (79, 'Grace Wright', 'grace.wright@example.com', '555-4567', '2022-03-05', 2),
+  (80, 'Wyatt King', 'wyatt.king@example.com', '555-8901', '2022-09-26', 3),
+  (81, 'Evelyn Lopez', 'evelyn.lopez@example.com', '555-2345', '2022-06-12', 4),
+  (82, 'Sebastian Young', 'sebastian.young@example.com', '555-6789', '2023-04-29', 1),
+  (83, 'Addison Turner', 'addison.turner@example.com', '555-0123', '2021-12-24', 2),
+  (84, 'Joseph Morgan', 'joseph.morgan@example.com', '555-4567', '2023-02-19', 3),
+  (85, 'Avery Lewis', 'avery.lewis@example.com', '555-8901', '2021-10-14', 4),
+  (86, 'Levi Carter', 'levi.carter@example.com', '555-2345', '2022-07-27', 1),
+  (87, 'Aubrey Hall', 'aubrey.hall@example.com', '555-6789', '2021-12-08', 2),
+  (88, 'Elizabeth Perez', 'elizabeth.perez@example.com', '555-0123', '2022-08-23', 3),
+  (89, 'Owen Wright', 'owen.wright@example.com', '555-4567', '2021-07-17', 4),
+  (90, 'Ryan King', 'ryan.king@example.com', '555-8901', '2023-03-20', 1),
+  (91, 'Scarlett Lopez', 'scarlett.lopez@example.com', '555-2345', '2021-10-24', 2),
+  (92, 'Liam Young', 'liam.young@example.com', '555-6789', '2021-09-05', 3),
+  (93, 'Ella Turner', 'ella.turner@example.com', '555-0123', '2023-01-27', 4),
+  (94, 'Noah Morgan', 'noah.morgan@example.com', '555-4567', '2022-03-13', 1),
+  (95, 'Chloe Lewis', 'chloe.lewis@example.com', '555-8901', '2022-12-07', 2),
+  (96, 'Mason Carter', 'mason.carter@example.com', '555-2345', '2023-03-03', 3),
+  (97, 'Lucy Hall', 'lucy.hall@example.com', '555-6789', '2021-12-30', 4),
+  (98, 'Logan Perez', 'logan.perez@example.com', '555-0123', '2022-06-23', 1),
+  (99, 'Harper Wright', 'harper.wright@example.com', '555-4567', '2021-07-20', 2),
+  (100, 'Evelyn King', 'evelyn.king@example.com', '555-8901', '2022-10-30', 3);
+```
+
+## b.	DEPARTMENT
+```
+INSERT INTO departments (dept_id, dept_name, dept_head)
+VALUES
+  (1, 'Sales', 'John Smith'),
+  (2, 'Marketing', 'Jane Johnson'),
+  (3, 'Human Resources', 'Michael Davis'),
+  (4, 'Finance', 'Sarah Thompson');
+```
+## c.	SALARY
+```
+INSERT INTO salaries (salary_id, emp_id, salary_amount, start_date, end_date)
+VALUES
+  (1, 14, 55000.00, '2021-05-10', '2021-12-31'),
+  (2, 32, 65000.00, '2022-01-01', '2022-12-31'),
+  (3, 44, 60000.00, '2021-08-20', '2022-07-31'),
+  (4, 49, 75000.00, '2022-11-05', '2022-12-31'),
+  (5, 57, 58000.00, '2021-06-15', '2021-12-31'),
+  (6, 59, 68000.00, '2022-01-01', '2022-12-31'),
+  (7, 62, 62000.00, '2021-09-15', '2022-12-31'),
+  (8, 68, 70000.00, '2022-11-05', '2022-12-31'),
+  (9, 70, 56000.00, '2021-07-15', '2021-12-31'),
+  (10, 72, 67000.00, '2022-01-01', '2022-12-31'),
+  (11, 74, 59000.00, '2021-08-20', '2022-07-31'),
+  (12, 76, 72000.00, '2022-11-05', '2022-12-31'),
+  (13, 78, 61000.00, '2021-09-15', '2022-12-31'),
+  (14, 83, 69000.00, '2022-01-01', '2022-12-31'),
+  (15, 86, 54000.00, '2021-07-15', '2021-12-31'),
+  (16, 88, 64000.00, '2022-01-01', '2022-12-31'),
+  (17, 90, 60000.00, '2021-09-15', '2022-12-31'),
+  (18, 94, 73000.00, '2022-11-05', '2022-12-31'),
+  (19, 96, 57000.00, '2021-08-20', '2022-07-31'),
+  (20, 98, 68000.00, '2022-01-01', '2022-12-31'),
+  (21, 3, 56000.00, '2021-07-15', '2021-12-31'),
+  (22, 4, 67000.00, '2022-01-01', '2022-12-31'),
+  (23, 7, 59000.00, '2021-08-20', '2022-07-31'),
+  (24, 8, 72000.00, '2022-11-05', '2022-12-31'),
+  (25, 12, 61000.00, '2021-09-15', '2022-12-31'),
+  (26, 17, 69000.00, '2022-01-01', '2022-12-31'),
+  (27, 22, 54000.00, '2021-07-15', '2021-12-31'),
+  (28, 23, 64000.00, '2022-01-01', '2022-12-31'),
+  (29, 28, 60000.00, '2021-09-15', '2022-12-31'),
+  (30, 29, 73000.00, '2022-11-05', '2022-12-31'),
+  (31, 31, 57000.00, '2021-08-20', '2022-07-31'),
+  (32, 33, 68000.00, '2022-01-01', '2022-12-31'),
+  (33, 34, 55000.00, '2021-05-10', '2021-12-31'),
+  (34, 35, 65000.00, '2022-01-01', '2022-12-31'),
+  (35, 37, 60000.00, '2021-08-20', '2022-07-31'),
+  (36, 38, 75000.00, '2022-11-05', '2022-12-31'),
+  (37, 39, 58000.00, '2021-06-15', '2021-12-31'),
+  (38, 40, 68000.00, '2022-01-01', '2022-12-31'),
+  (39, 41, 62000.00, '2021-09-15', '2022-12-31'),
+  (40, 42, 70000.00, '2022-11-05', '2022-12-31'),
+  (41, 43, 56000.00, '2021-07-15', '2021-12-31'),
+  (42, 46, 67000.00, '2022-01-01', '2022-12-31'),
+  (43, 48, 59000.00, '2021-08-20', '2022-07-31'),
+  (44, 52, 72000.00, '2022-11-05', '2022-12-31'),
+  (45, 55, 61000.00, '2021-09-15', '2022-12-31'),
+  (46, 58, 69000.00, '2022-01-01', '2022-12-31'),
+  (47, 60, 54000.00, '2021-07-15', '2021-12-31'),
+  (48, 63, 64000.00, '2022-01-01', '2022-12-31'),
+  (49, 64, 60000.00, '2021-09-15', '2022-12-31'),
+  (50, 65, 73000.00, '2022-11-05', '2022-12-31'),
+  (51, 67, 57000.00, '2021-08-20', '2022-07-31'),
+  (52, 69, 68000.00, '2022-01-01', '2022-12-31'),
+  (53, 71, 55000.00, '2021-05-10', '2021-12-31'),
+  (54, 73, 65000.00, '2022-01-01', '2022-12-31'),
+  (55, 75, 60000.00, '2021-08-20', '2022-07-31'),
+  (56, 77, 75000.00, '2022-11-05', '2022-12-31'),
+  (57, 79, 58000.00, '2021-06-15', '2021-12-31'),
+  (58, 80, 68000.00, '2022-01-01', '2022-12-31'),
+  (59, 81, 62000.00, '2021-09-15', '2022-12-31'),
+  (60, 82, 70000.00, '2022-11-05', '2022-12-31'),
+  (61, 84, 56000.00, '2021-07-15', '2021-12-31'),
+  (62, 85, 67000.00, '2022-01-01', '2022-12-31'),
+  (63, 87, 59000.00, '2021-08-20', '2022-07-31'),
+  (64, 89, 72000.00, '2022-11-05', '2022-12-31'),
+  (65, 91, 61000.00, '2021-09-15', '2022-12-31');
+```
+
+## 2.	DATA UPDATE
+a.	Delete the start_date and end_date columns in the SALARY table
+b.	Where the employee_id is 9, 10 and 11, update the department_ids to ‘4’ 
+
+## 3.	JOINS
+Determine which JOIN type is suitable for manipulating the data you have added to the EMPLOYEES_INFORMATION database
+
+## 4.	AGGREGATION
+a.	Calculate the total number of employees in this company
+b.	How many employees were hired in the year 2023?
+c.	What is the average salary for employees in each department?
+d.	How many employees are there in each department?
+e.	Who are the department heads and their corresponding departments?
+f.	What is the highest salary earned by an employee?
+g.	What is the total salary expense for each department?
+h.	How many employees were hired each year?
+
+## 5.	DATA QUERYING
+Think of additional questions and provide answers to them. Use your knowledge of CTEs, Subqueries, Aggregate functions e.t.c to flex your overall knowledge of SQL.
+5.	Which employees have salaries higher than the average salary in their respective departments?
+6.	What is the highest salary in each department, and which employees earn that salary?
+
+
+
+
