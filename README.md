@@ -943,6 +943,8 @@ VALUES
   (99, 'Harper Wright', 'harper.wright@example.com', '555-4567', '2021-07-20', 2),
   (100, 'Evelyn King', 'evelyn.king@example.com', '555-8901', '2022-10-30', 3);
   ```
+  ![Screenshot (115)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/d86977e0-6228-4edf-a717-8cbc3bb28392)
+
   ***
 ### Question 1b
 ```
@@ -958,6 +960,8 @@ VALUES
   (3, 'Human Resources', 'Michael Davis'),
   (4, 'Finance', 'Sarah Thompson');
   ```
+  ![Screenshot (109)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/0bae3c1c-5bff-4456-90ae-137e019947ab)
+
   ***
 ### Question 1c
 ```
@@ -1050,6 +1054,8 @@ UPDATE EMPLOYEE
 SET department_id = '4'
 WHERE employee_id IN (9, 10, 11);
 ```
+![Screenshot (110)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/7adcc947-c437-4a5a-9b61-5f6e366ea04b)
+
 ***
 ### Question 3.	JOINS
 Determine which JOIN type is suitable for manipulating the data you have added to the EMPLOYEES_INFORMATION database
@@ -1058,22 +1064,29 @@ SELECT *
 FROM EMPLOYEE
 INNER JOIN SALARY ON EMPLOYEE.employee_id = SALARY.emp_id;
 ```
+![Screenshot (94)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/437e3a50-edd5-4910-b668-94b1b4dcdc00)
+
 ***
 ### Question 4
-4a.	Calculate the total number of employees in this company
+### 4a.	Calculate the total number of employees in this company
 ```
 SELECT COUNT(*) AS total_employees
 FROM EMPLOYEE;
 ```
+![Screenshot (111)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/6fd235f4-1c85-4778-96ba-b6f66f2f3182)
+
+
 ***
- 4b.	How many employees were hired in the year 2023? 
+ ### 4b.	How many employees were hired in the year 2023? 
  ```
 SELECT COUNT(*) AS employees_hired_2023
 FROM EMPLOYEE
 WHERE YEAR(hire_date) = 2023;
 ```
+![Screenshot (96)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/80f2954b-5c94-4845-be3e-7f3e633297ea)
+
 ***
- 4c.What is the average salary for employees in each department? 
+ ### 4c.What is the average salary for employees in each department? 
  ```
 SELECT EMPLOYEE.department_id, DEPARTMENT.dept_name, AVG(SALARY.salary_amount) AS average_salary
 FROM EMPLOYEE
@@ -1081,28 +1094,35 @@ JOIN Department ON EMPLOYEE.department_id = Department.dept_id
 JOIN SALARY ON EMPLOYEE.EMPLOYEE_id = SALARY.emp_id
 GROUP BY EMPLOYEE.department_id, DEPARTMENT.dept_name;
 ```
+![Screenshot (114)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/21562690-7d8b-4b0b-a020-af715d0b3544)
 ***
-4d.	How many employees are there in each department
+### 4d.	How many employees are there in each department
 ```
 SELECT DEPARTMENT.dept_id, DEPARTMENT.dept_name, COUNT(EMPLOYEE.employee_id) AS employee_count
 FROM DEPARTMENT
 LEFT JOIN EMPLOYEE ON DEPARTMENT.dept_id = EMPLOYEE.department_id
 GROUP BY DEPARTMENT.dept_id, DEPARTMENT.dept_name;
 ```
+![Screenshot (112)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/affcb29d-23d1-40fb-8040-5085a5a24539)
+
 ***
-4e.	Who are the department heads and their corresponding departments 
+### 4e.	Who are the department heads and their corresponding departments 
 ```
 SELECT dept_head, dept_name
 FROM DEPARTMENT;
 ```
+![Screenshot (109)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/9964f66e-1c72-477b-89a2-13cd7b133d54)
+
 ***
-4f.	What is the highest salary earned by an employee?
+### 4f.	What is the highest salary earned by an employee?
 ```
 SELECT MAX(salary_amount) AS highest_salary
 FROM SALARY;
 ```
+![Screenshot (113)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/e4064892-71b4-47c9-9760-65b258b4bb9b)
+
 ***
-4g.	What is the total salary expense for each department?
+### 4g.	What is the total salary expense for each department?
 ```
 SELECT EMPLOYEE.department_id, DEPARTMENT.dept_name, SUM(SALARY.salary_amount) AS total_salary_expense
 FROM EMPLOYEE
@@ -1110,16 +1130,20 @@ JOIN DEPARTMENT ON EMPLOYEE.department_id = DEPARTMENT.dept_id
 JOIN SALARY ON EMPLOYEE.employee_id = SALARY.emp_id
 GROUP BY EMPLOYEE.department_id, DEPARTMENT.dept_name;
 ```
+![Screenshot (102)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/55339858-61dd-4e9a-a4da-9d7622e016e1)
+
 ***
-4h.	How many employees were hired each year?
+### 4h.	How many employees were hired each year?
 ```
 SELECT YEAR(hire_date) AS hire_year, COUNT(*) AS employees_hired
 FROM Employees
 GROUP BY YEAR(hire_date);
 ```
+![Screenshot (103)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/cffaa49c-8f6a-4c58-b8b4-cf5026241a5a)
+
 ***
 ### Question 5-DATA QUERRYING--
-5a.	What is the highest salary in each department, and which employees earn that salary?
+### 5a.	What is the highest salary in each department, and which employees earn that salary?
 use employees_information;
 ```
 WITH avg_salaries AS (
@@ -1135,8 +1159,10 @@ JOIN avg_salaries a ON e.department_id = a.department_id
 WHERE s.salary_amount > a.avg_salary
 ORDER BY e.department_id ASC;
 ```
+![Screenshot (107)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/4266a776-78d1-4a82-9405-468ccb8ff550)
+
 ***
-5b. What is the highest salary in each department, and which employees earn that salary?
+### 5b. What is the highest salary in each department, and which employees earn that salary?
 ```
 WITH max_salaries AS (
     SELECT e.department_id, MAX(s.salary_amount) AS max_salary
@@ -1150,6 +1176,8 @@ JOIN Salary s ON e.employee_id = s.emp_id
 JOIN max_salaries m ON e.department_id = m.department_id AND s.salary_amount = m.max_salary
 ORDER BY e.name ASC
 ```
+![Screenshot (109)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/53d550a0-50b8-4342-9e8b-90cad6021388)
+***
 
 
 
