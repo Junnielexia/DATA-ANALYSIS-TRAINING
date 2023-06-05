@@ -2,7 +2,7 @@
 ***
 # Welcome to My Data Analysis Journey!
 
-Hi there! My name is **Immaculata**, and I'm documenting my journey into data analysis on GitHub. I have always been interested in working with data and am excited to share my projects and insights with the community.
+Hi there! My name is **June**, and I'm documenting my journey into data analysis on GitHub. I have always been interested in working with data and am excited to share my projects and insights with the community.
 
 In this repository, you'll find my Excel projects along with documentation on my process and insights. I hope that my journey will inspire others to explore the world of data science.
 
