@@ -943,6 +943,7 @@ VALUES
   (99, 'Harper Wright', 'harper.wright@example.com', '555-4567', '2021-07-20', 2),
   (100, 'Evelyn King', 'evelyn.king@example.com', '555-8901', '2022-10-30', 3);
   ```
+  
   ![Screenshot (115)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/d86977e0-6228-4edf-a717-8cbc3bb28392)
 
   ***
@@ -960,6 +961,7 @@ VALUES
   (3, 'Human Resources', 'Michael Davis'),
   (4, 'Finance', 'Sarah Thompson');
   ```
+  
   ![Screenshot (109)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/0bae3c1c-5bff-4456-90ae-137e019947ab)
 
   ***
@@ -1054,6 +1056,7 @@ UPDATE EMPLOYEE
 SET department_id = '4'
 WHERE employee_id IN (9, 10, 11);
 ```
+
 ![Screenshot (110)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/7adcc947-c437-4a5a-9b61-5f6e366ea04b)
 
 ***
@@ -1064,6 +1067,7 @@ SELECT *
 FROM EMPLOYEE
 INNER JOIN SALARY ON EMPLOYEE.employee_id = SALARY.emp_id;
 ```
+
 ![Screenshot (94)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/437e3a50-edd5-4910-b668-94b1b4dcdc00)
 
 ***
@@ -1073,6 +1077,7 @@ INNER JOIN SALARY ON EMPLOYEE.employee_id = SALARY.emp_id;
 SELECT COUNT(*) AS total_employees
 FROM EMPLOYEE;
 ```
+
 ![Screenshot (111)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/6fd235f4-1c85-4778-96ba-b6f66f2f3182)
 
 
