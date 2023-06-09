@@ -1179,12 +1179,218 @@ ORDER BY e.name ASC
 ![Screenshot (109)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/53d550a0-50b8-4342-9e8b-90cad6021388)
 ***
 
+# POERBI AND POWERQUERY A GUIDE
 
+## Data Cleaning and Analysis with Power BI
 
+Power BI is a powerful tool for data analytics and visualization. In this guide, we will explore how to clean and analyze your data using Power BI, covering concepts such as loading data, building visualizations, creating measures and calculated columns, and performing data cleaning operations using Power Query.
 
+### Loading Data
 
+To get started, connect to your data source using Power BI Desktop. Ensure that your data is clean and properly formatted. Power BI supports various data sources, including databases, Excel files, CSV files, and more.
 
+### Building Visualizations
 
+Visualizations play a crucial role in understanding and communicating data insights. Here are a few common visualizations you can create in Power BI:
+
+- Line Chart: Visualize trends over time, such as revenue, expenses, or social media engagement.
+- Bar Chart: Compare data across categories, such as sales by region or product category.
+- Pie Chart: Show the distribution of data as a proportion of a whole, like market share or customer demographics.
+- Card Visual: Display key metrics, such as total revenue or average likes per post.
+- Scatter Plot: Explore relationships between two numerical variables, like age and income.
+
+Customize your visualizations by adding titles, legends, axis labels, and formatting options to make them more informative and visually appealing.
+
+### Creating Measures
+
+Measures are calculations performed on your data to derive insights and metrics. Here are a few examples of measures you can create using DAX (Data Analysis Expressions) in Power BI:
+
+```DAX
+Total Revenue = SUM(Data[Revenue])
+
+Average Quantity = AVERAGE(Data[Quantity])
+
+Gross Profit Margin = DIVIDE(SUM(Data[Revenue]) - SUM(Data[Expenses]), SUM(Data[Revenue]))
+
+Engagement Rate = DIVIDE(SUM(Data[Likes]) + SUM(Data[Shares]) + SUM(Data[Comments]), COUNT(Data[Post ID]))
+```
+
+Use the "New Measure" option in the Modeling tab to create these measures. DAX provides a wide range of functions and operators to perform calculations and aggregations on your data.
+
+### Adding Calculated Columns
+
+Calculated columns are additional columns created based on existing columns in your dataset. These columns can be used for further analysis or to derive insights. Here's an example of a calculated column:
+
+```DAX
+Revenue per Quantity = Data[Revenue] / Data[Quantity]
+```
+
+Create calculated columns in the Modeling tab by using DAX expressions. These columns become part of your dataset and can be used in visualizations, measures, and further transformations.
+
+### Data Cleaning with Power Query
+
+Power Query is a powerful data transformation and shaping tool within Power BI. It allows you to extract, clean, and transform your data before loading it into Power BI. Here are some key data cleaning operations you can perform using Power Query:
+
+- Removing Unnecessary Columns:
+  - Remove columns that are not required for your analysis to simplify your dataset.
+
+- Handling Missing Values:
+  - Replace missing values or remove rows with missing values based on your analysis requirements.
+
+- Removing Duplicates:
+  - Identify and remove duplicate rows in your dataset to avoid duplication of data.
+
+- Splitting Columns:
+  - Split columns containing multiple values or separate them into separate columns for better analysis.
+
+- Data Type Conversion:
+  - Ensure that columns are assigned the correct data types to avoid data interpretation issues.
+
+Power Query provides an intuitive interface to perform these operations. You can access Power Query by selecting "Edit Queries" or "Transform Data" options in Power BI.
+
+### Conclusion
+
+Power BI offers a comprehensive suite of tools and features for data cleaning and analysis. By leveraging Power Query for data cleaning and transformation, creating visualizations
+
+Certainly! In addition to the queries and formulas mentioned earlier, here are some other important features and concepts you should know in Power BI:
+***
+
+### Power Query Features
+
+- **Conditional Columns**: Create new columns based on conditions using the `if...then...else` logic. For example:
+
+  ```M
+  = Table.AddColumn(Table1, "Category", each if [Sales] > 1000 then "High" else "Low")
+  ```
+
+- **Data Type Handling**: Convert data types of columns using functions like `Text.From`, `Number.FromText`, `Date.FromText`, etc. For example:
+
+  ```M
+  = Table.TransformColumnTypes(Table1, {{"Date", type date}})
+  ```
+
+- **Pivot and Unpivot**: Pivot columns into rows or unpivot rows into columns using the `Table.Pivot` and `Table.Unpivot` functions. For example:
+
+  ```M
+  = Table.Pivot(Table1, List.Distinct(Table1[Category]), "Category", "Value")
+  ```
+
+### DAX Functions
+
+- **MAX/MIN**: Find the maximum or minimum value in a column. For example:
+
+  ```DAX
+  Max Sales = MAX(Table1[Sales])
+  ```
+
+- **TOPN**: Retrieve the top N rows based on a specified column. For example:
+
+  ```DAX
+  Top 5 Customers = TOPN(5, Table1, Table1[Revenue])
+  ```
+
+- **RANKX**: Assign a rank to values in a column based on a specified measure. For example:
+
+  ```DAX
+  Customer Rank = RANKX(ALL(Table1[Customer]), [Total Sales],, DESC)
+  ```
+
+- **DATEADD**: Perform date calculations by adding or subtracting a specific interval from a date. For example:
+
+  ```DAX
+  Next Year Sales = CALCULATE([Total Sales], DATEADD(Table1[Date], 1, YEAR))
+  ```
+
+- **RELATED**: Access data from a related table in a data model. For example, if you have a relationship between `Table1` and `Table2` based on a common column:
+
+  ```DAX
+  Related Value = RELATED(Table2[Value])
+  ```
+
+### Visualization Features
+
+- **Drillthrough**: Configure drillthrough actions to allow users to navigate to more detailed information by right-clicking on data points.
+- **Bookmarks**: Create bookmarks to save specific view settings and configurations within a report.
+- **Hierarchies**: Define hierarchical relationships between columns to enable drill-down capabilities in visuals.
+- **Conditional Formatting**: Apply conditional formatting to highlight specific data points based on rules or thresholds.
+
+### Advanced Analysis and Modeling
+
+- **Time Intelligence Functions**: Utilize DAX functions like `SAMEPERIODLASTYEAR`, `PREVIOUSMONTH`, `DATESYTD`, etc., for analyzing data over time.
+- **Calculations with Multiple Tables**: Perform calculations using related tables and functions like `RELATEDTABLE`, `SUMMARIZE`, etc., for advanced data modeling.
+- **Advanced Relationships**: Configure relationships with multiple columns, bidirectional filtering, and cross-filter direction settings.
+
+## Essential Queries and Formulas for Data Analysis
+
+As a data analyst, there are several queries and formulas you should be familiar with to perform effective data analysis. Here's a beginner's guide to some essential queries and formulas using Power Query and DAX in Power BI.
+
+### Power Query Operations
+
+Power Query allows you to transform and clean your data before analysis. Here are some common operations:
+
+- **Filtering Rows**: Select rows that meet specific criteria using the `Filter` function. For example:
+
+  ```M
+  = Table.SelectRows(Table1, each [Column1] > 100)
+  ```
+
+- **Sorting Data**: Sort your data based on one or more columns using the `Table.Sort` function. For example:
+
+  ```M
+  = Table.Sort(Table1,{{"Column1", Order.Ascending}})
+  ```
+
+- **Grouping and Aggregating**: Group your data based on a column and perform aggregations using the `Table.Group` function. For example:
+
+  ```M
+  = Table.Group(Table1, {"Column1"}, {{"Sum", each List.Sum([Column2]), type number}})
+  ```
+
+- **Merging Tables**: Combine multiple tables based on common columns using the `Table.NestedJoin` function. For example:
+
+  ```M
+  = Table.NestedJoin(Table1, {"Column1"}, Table2, {"Column1"}, "Merged", JoinKind.Inner)
+  ```
+
+### DAX Formulas
+
+DAX (Data Analysis Expressions) is a formula language used in Power BI for calculations and analysis. Here are some important formulas to know:
+
+- **SUM**: Calculate the sum of a column. For example:
+
+  ```DAX
+  Total Sales = SUM(Table1[Sales])
+  ```
+
+- **AVERAGE**: Calculate the average of a column. For example:
+
+  ```DAX
+  Average Revenue = AVERAGE(Table1[Revenue])
+  ```
+
+- **COUNT**: Count the number of rows in a column. For example:
+
+  ```DAX
+  Total Customers = COUNT(Table1[CustomerID])
+  ```
+
+- **DIVIDE**: Divide two values. This function is useful for calculating ratios and percentages. For example:
+
+  ```DAX
+  Profit Margin = DIVIDE(SUM(Table1[Profit]), SUM(Table1[Revenue]))
+  ```
+
+- **IF**: Perform conditional calculations. For example:
+
+  ```DAX
+  Category Status = IF(Table1[Revenue] > 1000, "High", "Low")
+  ```
+
+- **CALCULATE**: Modify the context of calculations. This function is useful for applying filters or changing the calculation context. For example:
+
+  ```DAX
+  Revenue Increase = CALCULATE(SUM(Table1[Revenue]), Table1[Year] = 2022)
+  ```
 
 
 
