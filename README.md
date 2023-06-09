@@ -1391,9 +1391,180 @@ DAX (Data Analysis Expressions) is a formula language used in Power BI for calcu
   ```DAX
   Revenue Increase = CALCULATE(SUM(Table1[Revenue]), Table1[Year] = 2022)
   ```
+***
+# Learn with Samples
+### Example 1: Sales Analysis
+Suppose you have a dataset containing sales data with columns like "Date," "Product," "Quantity," and "Revenue." You want to analyze the sales trends and calculate metrics like total revenue, average quantity, and maximum revenue.
 
+1. Loading Data:
+   - Connect to your sales dataset using Power BI Desktop.
+   - Ensure that your data is clean and properly formatted.
 
+2. Building Visualizations:
+   - Create a line chart to visualize the trend of revenue over time. Drag the "Date" column to the Axis field and the "Revenue" column to the Values field.
+   - Create a card visual to display the total revenue. Drag the "Revenue" column to the Values field of the card visual.
 
+3. Creating Measures:
+   - Open the "Modeling" tab and click on "New Measure."
+   - To calculate total revenue, use the following DAX formula: `Total Revenue = SUM(Sales[Revenue])`
+   - To calculate average quantity, use: `Average Quantity = AVERAGE(Sales[Quantity])`
+   - To find the maximum revenue, use: `Max Revenue = MAX(Sales[Revenue])`
+
+4. Adding Calculated Columns:
+   - Open the "Modeling" tab and click on "New Column."
+   - To calculate the revenue per quantity, use: `Revenue per Quantity = Sales[Revenue] / Sales[Quantity]`
+
+5. Additional Visualizations:
+   - Create a table visual to display the top-selling products. Drag the "Product" column to the Rows field and the "Quantity" column to the Values field. Sort the table by the "Quantity" column in descending order.
+   - Create a donut chart to show the distribution of revenue by product. Drag the "Product" column to the Legend field and the "Revenue" column to the Values field.
+
+## Example 2: Customer Segmentation
+Suppose you have a dataset containing customer information like "Customer ID," "Age," "Gender," "Income," and "Purchase History." You want to segment your customers based on their age and income and analyze their purchase behavior.
+
+1. Loading Data:
+   - Connect to your customer dataset using Power BI Desktop.
+   - Ensure that your data is clean and properly formatted.
+
+2. Building Visualizations:
+   - Create a scatter plot to visualize the relationship between age and income. Drag the "Age" column to the Axis field and the "Income" column to the Values field.
+   - Color the scatter plot points based on gender by dragging the "Gender" column to the Legend field.
+
+3. Creating Measures:
+   - Open the "Modeling" tab and click on "New Measure."
+   - To calculate the average income, use: `Average Income = AVERAGE(Customer[Income])`
+   - To calculate the average age, use: `Average Age = AVERAGE(Customer[Age])`
+
+4. Adding Calculated Columns:
+   - Open the "Modeling" tab and click on "New Column."
+   - To segment customers into different age groups, use the following formula: 
+     ```
+     Age Group = 
+     IF(Customer[Age] < 30, "Young",
+     IF(Customer[Age] >= 30 && Customer[Age] < 50, "Middle-aged",
+     "Senior"))
+     ```
+1. Drag the "Age Group" column to the Axis field of the stacked column chart visual.
+2. Drag the "Purchase History" column to the Values field of the stacked column chart.
+3. Power BI will automatically aggregate the purchase history values based on the age groups.
+4. Customize the visual by adding labels, changing colors, or adjusting the axis settings to make it more informative.
+
+### Example 3: Customer Retention Analysis
+Suppose you have a dataset containing customer information, including "Customer ID," "Registration Date," and "Last Purchase Date." You want to analyze customer retention by calculating the percentage of active customers and visualizing their retention over time.
+
+1. Loading Data:
+   - Connect to your customer dataset using Power BI Desktop.
+   - Ensure that your data is clean and properly formatted.
+
+2. Building Visualizations:
+   - Create a line chart to visualize customer retention over time. Drag the "Registration Date" column to the Axis field and the "Customer ID" column to the Values field.
+   - Calculate the count of active customers using the "Last Purchase Date" column as a filter. Drag the "Customer ID" column to the Values field, select the "Count" aggregation, and set the filter to show only customers with a non-blank "Last Purchase Date."
+
+3. Creating Measures:
+   - Open the "Modeling" tab and click on "New Measure."
+   - To calculate the percentage of active customers, use the following formula:
+     ```
+     % Active Customers = 
+     DIVIDE(
+       CALCULATE(
+         COUNT(Customer[Customer ID]),
+         NOT(ISBLANK(Customer[Last Purchase Date]))
+       ),
+       COUNT(Customer[Customer ID])
+     )
+     ```
+
+4. Additional Visualizations:
+   - Create a card visual to display the current percentage of active customers. Drag the "% Active Customers" measure to the Values field of the card visual.
+   - Add a slicer visual to filter the line chart by specific time periods, such as months or quarters, to gain more insights into customer retention patterns.
+
+These examples showcase some common scenarios in data analytics using Power BI. By exploring and practicing with different datasets and scenarios, you'll gain hands-on experience in utilizing formulas, queries, and visualizations to analyze and derive insights from your data.
+5. Additional Visualizations:
+   - Create a bar chart to display the count of customers in each age group. Drag the "Age Group" column to the Axis field and the "Customer ID" column to the Values field, selecting the "Count" aggregation.
+   - Create a stacked column chart to show the purchase history by age group.
+
+Absolutely! Here are a few more examples to help you further enhance your Power BI skills:
+
+Example 4: Financial Analysis
+Suppose you have a dataset containing financial data, including "Date," "Revenue," "Expenses," and "Profit." You want to analyze the financial performance over time and calculate metrics such as gross profit margin and net profit.
+
+1. Loading Data:
+   - Connect to your financial dataset using Power BI Desktop.
+   - Ensure that your data is clean and properly formatted.
+
+2. Building Visualizations:
+   - Create a line chart to visualize the revenue, expenses, and profit trends over time. Drag the "Date" column to the Axis field and the respective financial columns to the Values field.
+   - Customize the chart by adding titles, axis labels, and legends to make it more informative.
+
+3. Creating Measures:
+   - Open the "Modeling" tab and click on "New Measure."
+   - To calculate the gross profit margin, use the following formula:
+     ```
+     Gross Profit Margin = 
+     DIVIDE(
+       SUM(Financial[Revenue]) - SUM(Financial[Expenses]),
+       SUM(Financial[Revenue])
+     )
+     ```
+   - To calculate the net profit, use:
+     ```
+     Net Profit = SUM(Financial[Profit])
+     ```
+
+4. Additional Visualizations:
+   - Create a card visual to display the current gross profit margin. Drag the "Gross Profit Margin" measure to the Values field of the card visual.
+   - Add a stacked column chart to show the breakdown of revenue and expenses by category.
+
+Example 5: Social Media Analytics
+Suppose you have a dataset containing social media metrics, including "Date," "Likes," "Shares," and "Comments." You want to analyze the engagement on your social media posts and calculate metrics like average likes per post and engagement rate.
+
+1. Loading Data:
+   - Connect to your social media dataset using Power BI Desktop.
+   - Ensure that your data is clean and properly formatted.
+
+2. Building Visualizations:
+   - Create a line chart to visualize the trends of likes, shares, and comments over time. Drag the "Date" column to the Axis field and the respective social media metrics to the Values field.
+   - Customize the chart by adding titles, axis labels, and legends to make it more informative.
+
+3. Creating Measures:
+   - Open the "Modeling" tab and click on "New Measure."
+   - To calculate the average likes per post, use the following formula:
+     ```
+     Average Likes per Post = 
+     AVERAGE(SocialMedia[Likes])
+     ```
+   - To calculate the engagement rate, use:
+     ```
+     Engagement Rate = 
+     DIVIDE(
+       SUM(SocialMedia[Likes]) + SUM(SocialMedia[Shares]) + SUM(SocialMedia[Comments]),
+       COUNT(SocialMedia[Post ID])
+     )
+     ```
+
+4. Additional Visualizations:
+   - Create a card visual to display the current average likes per post. Drag the "Average Likes per Post" measure to the Values field of the card visual.
+   - Add a stacked bar chart to show the distribution of engagement (likes, shares, comments) by post categories.
+
+Now let's talk about Power Queries. Power Query is a powerful data transformation and shaping tool within Power BI that allows you to extract, transform, and load data from various sources.
+
+```
+With Power Query, you can:
+- Connect to data sources and import data into Power BI.
+- Perform data cleaning and transformation operations such as filtering, sorting, removing duplicates, and splitting columns.
+- Merge and append multiple data tables.
+- Create custom calculations and columns.
+- Apply data type conversions.
+- Handle missing or error values.
+- Group and aggregate data.
+- Pivot and unpIvot data.
+- Split columns based on delimiters or specific criteria.
+- Extract and replace values from text or numeric columns.
+- Generate and expand date/time series.
+- Apply conditional logic to create new columns based on specific conditions.
+- Combine data from different sources using joins and merges.
+- Perform advanced transformations using custom functions and expressions.
+- Load transformed data into Power BI for analysis and visualization.
+```
 
 
  
