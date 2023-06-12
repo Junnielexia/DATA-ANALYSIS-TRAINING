@@ -117,7 +117,7 @@ To solve the task, I created a student data using characters from [Avater the la
 ### Answer
 To solve the task,I used the sum function to calculate total revenue (SALES) and profit , then used conditional formating to highligh units sold that are greater than the average i calculated and finally i used the filter function to show the question 3.
 
-![Screenshot (67)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/8bf0651c-b4f4-4426-a670-3b7c03a5516a)
+![Screenshot (67)](images/Screenshot%20(67).png)
 
 ***
 ## WEEK 1 TASK: SALES DATA
@@ -135,7 +135,7 @@ To solve the task,I used the sum function to calculate total revenue (SALES) and
 To solve this, I used the sumfunction to answer question 1-4,I calculated the average and used conditional formating to answer question 6&7, I used the filter function to solve question 8 and 9 and finally I used data validation function to answer question 10.
 #### Week1 TASK 1-8,10
 
-![week1question1-10](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/8baaf186-d707-4e50-9b81-1b1c19240c8c)
+![week1question1-10](images/week1question1-10.png)
 
 #### TASK 9
 
