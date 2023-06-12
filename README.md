@@ -139,7 +139,7 @@ To solve this, I used the sumfunction to answer question 1-4,I calculated the av
 
 #### TASK 9
 
-![week1question9](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/3052a3e0-5756-45c3-9cd8-ba9f184f027e)
+![week1question9](images/week1question9.png)
 ***
 # WEEK 2 - EXCEL formulas and function:
 Excel formulas and functions are powerful tools that allow users to perform various calculations and operations within spreadsheets. Here are some important concepts and functions you should be aware of:
@@ -207,7 +207,7 @@ Pivot tables are a powerful feature in Excel that allow you to summarize and ana
 
 Pivot tables are especially useful when dealing with large datasets and complex data analysis tasks. They enable you to quickly analyze and visualize data from different perspectives, identify patterns, trends, and outliers, and make data-driven decisions more effectively.
 
-![Screenshot (74)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/92b26264-5ac3-4098-8083-0ffe53bf9d3b)
+![Screenshot (74)](images/Screenshot%20(74).png)
 ***
 ## PIVOT CHART:
 Pivot charts are visual representations of data that are created from pivot tables in Excel. They provide a dynamic and interactive way to analyze and summarize large datasets. Pivot charts allow you to visualize trends, patterns, and relationships within your data, making it easier to derive insights and communicate information effectively.
@@ -231,7 +231,7 @@ Pivot charts are visual representations of data that are created from pivot tabl
 8. **Update the Pivot Chart**: If your underlying data changes or if you modify the pivot table, the pivot chart will automatically update to reflect those changes. You can also manually refresh the chart by right-clicking on it and selecting "Refresh" or by refreshing the pivot table data.
 
 Pivot charts provide a visual representation of the summarized data in your pivot table, allowing you to identify trends, compare values, and present insights effectively. They are an essential tool for data analysis and reporting in Excel, as they enable you to transform raw data into meaningful visualizations.
-![Screenshot (75)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/91427010-deb3-4494-bd49-b2e4ff771845)
+![Screenshot (75)](images/Screenshot%20(75).png)
 ***
 ```
 # WEEK2- TASK 1
@@ -252,13 +252,11 @@ Using the sales dataset provided,carryout the following
 |3. Total number of sales where gross sale is less than average| `=COUNTIF(GrossSaleRange, "<" & AVERAGE(GrossSaleRange))`              |
 
 ### Solution (Question 1,2,3)
-![Screenshot (73)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/550538fa-39db-462c-b792-19f8db7a1ca9)
+![Screenshot (73)](images/Screenshot%20(73).png)
 
-### solution: PIVOT TABLE 1
-![image](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/235c81a3-2c6e-402d-a58e-e2dfe3da73ed)
+### solution: PIVOT TABLE 1 & 2
+![image](images/Screenshot%20(74).png)
 
-### Solution: PIVOT TABLE 2
-![image](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/1301f52b-8557-474f-9725-83a8f72e1f0f)
 ***
 # EXCEL DASHBOARD
 **What are Excel Dashboards?**
@@ -317,7 +315,7 @@ h. Order and Sales by Month
 10. Build an interactive dashboard showing the insights above.
 ```
 
-![Screenshot (77)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/bb9a6a57-99f8-4349-961d-5d89871e5f53)
+![Screenshot (77)](images/Screenshot%20(77).png)
 
 ***
 # Answer
@@ -337,23 +335,23 @@ h. Order and Sales by Month
 | 8      | Total revenue generated in Kentucky           | `=SUMIFS(revenue_column, state_column, "Kentucky")`                  |
 | 9      | Convert text and date to date in a column     | `=IF(ISNUMBER(A1), DATEVALUE(A1), DATEVALUE(TEXT(A1, "dd/mm/yyyy")))`|
 
-![Screenshot (82)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/b64f1e52-b9d5-41c1-808b-6b293a8fd154)
+![Screenshot (82)](images/Screenshot%20(82).png)
 ***
 **Third Analysis:** To solvre business question 9 I selected the data by using ctrl + shift + arrow left + arrow down, then i inserted the different pivot tables. for 9h i grouped the date filter to get months.
 **Business Question 9a-f**
 
-![Screenshot (79)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/cab00b52-d8d7-4ced-96ad-0222ed096bc4)
+![Screenshot (79)](images/Screenshot%20(79).png)
 
 **Business Question 9g-h**
 
-![Screenshot (80)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/bc3c2ad8-17d8-490c-ae37-498ad7281fef)
+![Screenshot (80)](images/Screenshot%20(80).png)
 ***
 **Fourth Analysis:** I used thge 8 pivot tables to created a pivot chart for visualization of the data.
-![Screenshot (84)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/7b665ef1-ed8e-41e2-b657-3a937808ae4f)
+![Screenshot (84)](images/Screenshot&20(84).png)
 ***
 **Fifth Analysis:** I created a dashboard representing the kpI and added interactivity to it by including search button for the customers,links and icons,slicers etc
 
-![image](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/bdfb4a3c-4eac-421e-9ec6-8c5040cce8e0)
+![image](images/Screenshot%20(85).png)
 
 **Sixth Analyis:** It is important to use rhyming color pallete to create a coherent visuals for the dashboards. This pallete are availaibe in sites like coolor.co and all that is needed is copying paste it in the customizwe color option of excel.
 to imrove the visualization on my dashboard i used this color pallette
