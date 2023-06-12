@@ -6,7 +6,7 @@ Hi there! My name is **June**, and I'm documenting my journey into data analysis
 
 In this repository, you'll find my Excel projects along with documentation on my process and insights. I hope that my journey will inspire others to explore the world of data science.
 
-![Data Analysis Journey](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/4a80ed56-0376-4247-a1bf-50f5e8c7abe0)
+![image](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/588508bf-b34f-468f-86d5-82d98672dd5a)
 
 If you have any questions or suggestions, feel free to reach out. Happy exploring!
 
@@ -53,7 +53,6 @@ Meanwhile, an alternative way to access Excel and PowerBI via [Microsoft 365](ht
 ***
 # A. Excel
 
-![image](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/4fa051c9-960c-44f5-bf0c-1aee9f06fdb6)
 ***
 ## A brief overview of Microsoft Excel:
 Microsoft Excel is a spreadsheet software developed by Microsoft. It's widely used for various data-related tasks such as data entry, analysis, and visualization. Excel is equipped with a vast array of features that allow users to perform complex data analysis tasks easily. Here are some key features of Excel:
@@ -185,6 +184,7 @@ Excel formulas and functions are powerful tools that allow users to perform vari
 | SUMIF              | `=SUMIF(range, criteria, sum_range)`             |
 | COUNTIF            | `=COUNTIF(range, criteria)`                      |
 | AVERAGEIF          | `=AVERAGEIF(range, criteria, average_range)`     |
+
 ***
 ## PIVOT TABLES IN EXCEL:
 Pivot tables are a powerful feature in Excel that allow you to summarize and analyze large amounts of data in a structured and dynamic way. They provide a flexible and interactive way to organize, summarize, and extract insights from your data.
@@ -364,7 +364,7 @@ to imrove the visualization on my dashboard i used this color pallette
 | Peach        | #FFC9B9    |
 | Copper       | #D68C45    |
 
-![image](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/a16b10ca-7176-42f6-8c8b-aef1864e2baa)
+
 
 ***
 # MySQL
@@ -532,7 +532,7 @@ INSERT INTO students (students_Id, first_name, last_name, Age, Exam_score, passi
     (14, 'KatarI', 'Healer', 20, 90, 'A'),
     (15, 'TopI', 'Metalbender', 16, 88, 'B');
 ```
-![Screenshot (88)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/791059e4-5469-40ac-a24a-576b0ba59a0c)
+![Screenshot (88)](images/Screenshot%20(88).png)
 
 2. Update the Scores and Grades of the first 5 students in your table to the following respectively (scores: 60, 65, 50.5, 45, and 71.5) (Grades: B, B, C, D, and A).
 
@@ -633,8 +633,7 @@ VALUES
   (19, 'Luna Wilson', 'luna.wilson@example.com', '555-4567', '2022-05-06', 2),
   (20, 'Elijah Clark', 'elijah.clark@example.com', '555-8901', '2021-11-30', 3),
   (21, 'Scarlett Moore', 'scarlett.moore@example.com', '555-2345', '2022-04-21', 4),
-  (
-  22, 'Lucas Baker', 'lucas.baker@example.com', '555-6789', '2023-03-09', 1),
+  (22, 'Lucas Baker', 'lucas.baker@example.com', '555-6789', '2023-03-09', 1),
   (23, 'Mila Scott', 'mila.scott@example.com', '555-0123', '2022-01-13', 2),
   (24, 'Jackson Green', 'jackson.green@example.com', '555-4567', '2021-10-09', 3),
   (25, 'Penelope Adams', 'penelope.adams@example.com', '555-8901', '2023-02-05', 4),
@@ -979,7 +978,7 @@ VALUES
   (5, 57, 58000.00, '2021-06-15', '2021-12-31'),
   (6, 59, 68000.00, '2022-01-01', '2022-12-31'),
   (7, 62, 62000.00, '2021-09-15', '2022-12-31'),
-(8, 68, 70000.00, '2022-11-05', '2022-12-31'),
+  (8, 68, 70000.00, '2022-11-05', '2022-12-31'),
   (9, 70, 56000.00, '2021-07-15', '2021-12-31'),
   (10, 72, 67000.00, '2022-01-01', '2022-12-31'),
   (11, 74, 59000.00, '2021-08-20', '2022-07-31'),
