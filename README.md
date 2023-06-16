@@ -1572,6 +1572,7 @@ With Power Query, you can:
 # Introduction
 
 Welcome to the Idiot's Guide to Data Cleaning and Analysis with Power BI! In this guide, we will explore the importance of data cleaning in the data analysis process and introduce you to Power BI, a powerful tool for both data cleaning and analysis. By following the steps outlined here, even someone with little to no prior experience can learn how to prepare and analyze data effectively. So let's get started!
+![Screenshot (124)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/389b3e08-9cd3-476a-b780-434966392f85)
 
 ## Overview of the Importance of Data Cleaning in the Data Analysis Process
 
@@ -1594,9 +1595,15 @@ To import the FIFA 2021 dataset into Power BI, follow these steps:
 
 1. Launch Power BI Desktop.
 2. Click on "Get Data" in the Home tab.
+![Screenshot (123)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/107aed6f-ab5e-413d-90c4-116707ae407a)
+
 3. Select the appropriate file format for your dataset (e.g., Excel, CSV, etc.).
+![Screenshot (126)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/af96a72c-4a43-4153-9c36-3158c92b1ddd)
+
 4. Locate and select the FIFA 2021 dataset file on your computer.
 5. Click "Load" to import the dataset into Power BI.
+![Screenshot (121)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/2834c742-64e4-49b2-9457-f117cc82fdce)
+
 
 ### Opening the Power Query Editor for Data Cleaning Tasks
 
@@ -1607,6 +1614,9 @@ To open the Power Query Editor, follow these steps:
 1. In Power BI Desktop, go to the Home tab.
 2. Click on "Edit Queries" in the External Data group.
 3. The Power Query Editor will open, displaying a preview of your dataset.
+
+![Screenshot (127)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/cc279749-a383-4b4f-8470-dc99526878ac)
+
 
 ### Initial Data Exploration and Understanding the Dataset Structure
 
@@ -1621,6 +1631,7 @@ Before diving into data cleaning, it's essential to explore and understand the s
 4. Identify missing values: Look for any blank cells or placeholders that indicate missing values. Missing values need to be handled appropriately during the data cleaning process.
 
 By performing these initial exploration tasks, you will gain a better understanding of the dataset's structure and identify potential areas that require data cleaning.
+*removing irrelevant column*
 
 ### 2. Handling Missing Values
    - Identifying missing values in the dataset.
