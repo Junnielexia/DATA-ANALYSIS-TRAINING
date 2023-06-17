@@ -1631,7 +1631,48 @@ Before diving into data cleaning, it's essential to explore and understand the s
 4. Identify missing values: Look for any blank cells or placeholders that indicate missing values. Missing values need to be handled appropriately during the data cleaning process.
 
 By performing these initial exploration tasks, you will gain a better understanding of the dataset's structure and identify potential areas that require data cleaning.
+## FIFA 2021 Dataset
+
+The FIFA 2021 dataset is a valuable resource obtained from Kaggle, providing detailed information on 18,979 football players. With 77 columns capturing player statistics and demography for the year 2021, you can explore a wide range of data, including unique identification numbers, names, ages, nationalities, positions, overall ratings, wages, contracts, and more. This comprehensive dataset offers valuable insights for analyzing player performance, studying demographics, and exploring various attributes within the footballing world of 2021.
+
+### Project Goals
+
+To facilitate effective data analysis, this project sets out to accomplish the following goals:
+
+1. **Identify and resolve duplicate entries:** Detect and eliminate redundant records in the dataset to ensure data accuracy and integrity.
+
+2. **Handle missing values:** Address incomplete or missing data points through appropriate techniques such as imputation or strategic decision-making.
+
+3. **Rectify incorrect data types:** Ensure each data field is assigned the appropriate data type to enable accurate analysis and interpretation.
+
+4. **Correct calculation errors:** Identify and rectify discrepancies or errors in calculations across rows and columns to ensure reliable analysis outcomes.
+
+5. **Address spelling and value errors:** Identify and rectify inconsistencies or inaccuracies in spellings or values to enhance data quality and integrity.
+
+6. **Handle null entries:** Identify and manage instances of null entries to ensure data completeness and reliability.
+
+By accomplishing these project goals in a systematic manner, we will achieve a clean and reliable dataset that can be effectively utilized for further analysis and insightful decision-making.
+ 
 *removing irrelevant column*
+![Screenshot (121)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/43093f88-d506-45e5-8da2-0930d2c98419)
+*Removing Whitespace*
+click on view and uncheck the whitespace button to make it look like a normal sized spreadsheet
+  *Stamdardizing Data Formats*
+** ID Column:conversion from Numeric to text**
+Treating the ID column as text aligns with the purpose of an ID, which is typically used as a unique identifier or reference rather than a value for mathematical calculations. By preserving the textual nature of the IDs, it becomes easier to interpret and maintain their intended purpose throughout data analysis or integration with other systems.
+Steps To convert the ID column from number to text in Power Query within Power BI:
+
+1. Open the Power Query Editor in Power BI by selecting the relevant table or query and clicking on the "Edit Queries" button.
+
+2. Locate the ID column that you want to convert.
+
+3. Right-click on the ID column header and select "Change Type."
+
+4. Choose "Text" as the data type for the ID column.
+
+5. Power Query will automatically convert the ID column from number to text format.
+
+![Screenshot (130)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/259cee0a-d689-4950-8d43-2f0a77aed4c0)
 
 ### 2. Handling Missing Values
    - Identifying missing values in the dataset.
