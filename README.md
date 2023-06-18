@@ -1663,7 +1663,7 @@ It is important to enable column profile distribution and quality in the view ta
 click on view and uncheck the whitespace button to make it look like a normal sized spreadsheet
 
 *Stamdardizing Data Formats*
-** ID Column:conversion from Numeric to text**
+## ID Column:conversion from Numeric to text
 Treating the ID column as text aligns with the purpose of an ID, which is typically used as a unique identifier or reference rather than a value for mathematical calculations. By preserving the textual nature of the IDs, it becomes easier to interpret and maintain their intended purpose throughout data analysis or integration with other systems.
 Steps To convert the ID column from number to text in Power Query within Power BI:
 
@@ -1690,8 +1690,16 @@ because of the presence of special characters n some of the players names column
 
 - To capitalize the first letter of each name, right-click on the column header, choose "Transform," and then select "Capitalize Each Word." and Rename the column name to FullName and compare with the other long name before deleting it.
   ![Screenshot (135)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/d364ae11-9695-48af-b98d-dc32238c68d1)
+## Age and Nationality Column
+the two column sare intact and will remain untouched as they have no duplicate data,missing data or error.
+![Screenshot (136)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/9a0fc23c-9a04-4650-96a1-4e3c1db9d54e)
 
-  
+## Overall Rating (OVA) and Potential Rating (POT)
+To convert the Overall Rating (OVA) and Potential Rating (POT) columns into percentages, follow these steps:
+
+In the Power Query Editor, go to the Transform tab and select Divide from the mathematics pack ,enter 100 as variable to divide the column with then convert the data type to percentage ."
+![Screenshot (138)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/7789d1eb-16ca-496b-a1e2-f2cf11d46b5b)
+
 
 ### 2. Handling Missing Values
    - Identifying missing values in the dataset.
