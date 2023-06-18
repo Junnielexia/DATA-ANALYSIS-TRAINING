@@ -1686,8 +1686,11 @@ because of the presence of special characters n some of the players names column
 
 - Delete the unnecessary columns, keeping only the column that contains the player names.
 
-- To capitalize the first letter of each name, right-click on the column header, choose "Transform" and then select "Capitalize Each Word."
-  
+- To remove the dash between each name, right-click on the column header, choose "Replace Values," and replace the dash with an empty value.
+
+- To capitalize the first letter of each name, right-click on the column header, choose "Transform," and then select "Capitalize Each Word." and Rename the column name to FullName and compare with the other long name before deleting it.
+  ![Screenshot (135)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/d364ae11-9695-48af-b98d-dc32238c68d1)
+
   
 
 ### 2. Handling Missing Values
