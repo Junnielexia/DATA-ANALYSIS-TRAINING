@@ -1652,12 +1652,17 @@ To facilitate effective data analysis, this project sets out to accomplish the f
 6. **Handle null entries:** Identify and manage instances of null entries to ensure data completeness and reliability.
 
 By accomplishing these project goals in a systematic manner, we will achieve a clean and reliable dataset that can be effectively utilized for further analysis and insightful decision-making.
- 
+*Insight from column*
+It is important to enable column profile distribution and quality in the view tab this is important to gain insights into data distribution, assess data quality, identify discrepancies, validate data, and improve data exploration capabilities.
+![Screenshot (132)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/d013e5dd-74be-4420-bcdf-549877f43c37)
+
 *removing irrelevant column*
 ![Screenshot (121)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/43093f88-d506-45e5-8da2-0930d2c98419)
+
 *Removing Whitespace*
 click on view and uncheck the whitespace button to make it look like a normal sized spreadsheet
-  *Stamdardizing Data Formats*
+
+*Stamdardizing Data Formats*
 ** ID Column:conversion from Numeric to text**
 Treating the ID column as text aligns with the purpose of an ID, which is typically used as a unique identifier or reference rather than a value for mathematical calculations. By preserving the textual nature of the IDs, it becomes easier to interpret and maintain their intended purpose throughout data analysis or integration with other systems.
 Steps To convert the ID column from number to text in Power Query within Power BI:
@@ -1673,6 +1678,17 @@ Steps To convert the ID column from number to text in Power Query within Power B
 5. Power Query will automatically convert the ID column from number to text format.
 
 ![Screenshot (130)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/259cee0a-d689-4950-8d43-2f0a77aed4c0)
+
+*Extracting names from Player url*
+because of the presence of special characters n some of the players names column, I decided to extract their name from the players url.To extract names from a player URL in Power Query within Power BI, you can use the "Split Column" feature and perform additional transformations:
+
+- Open the Power Query Editor, select the column containing the player URLs, right-click on the column header, choose "Split Column," and select "By Delimiter." Specify the delimiter (such as "/") and choose the option to split into separate columns.
+
+- Delete the unnecessary columns, keeping only the column that contains the player names.
+
+- To capitalize the first letter of each name, right-click on the column header, choose "Transform" and then select "Capitalize Each Word."
+  
+  
 
 ### 2. Handling Missing Values
    - Identifying missing values in the dataset.
