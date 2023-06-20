@@ -1691,14 +1691,53 @@ because of the presence of special characters n some of the players names column
 - To capitalize the first letter of each name, right-click on the column header, choose "Transform," and then select "Capitalize Each Word." and Rename the column name to FullName and compare with the other long name before deleting it.
   ![Screenshot (135)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/d364ae11-9695-48af-b98d-dc32238c68d1)
 ## Age and Nationality Column
-the two column sare intact and will remain untouched as they have no duplicate data,missing data or error.
+the two columns are intact and will remain untouched as they have no duplicate data,missing data or error.
 ![Screenshot (136)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/9a0fc23c-9a04-4650-96a1-4e3c1db9d54e)
 
 ## Overall Rating (OVA) and Potential Rating (POT)
 To convert the Overall Rating (OVA) and Potential Rating (POT) columns into percentages, follow these steps:
 
-In the Power Query Editor, go to the Transform tab and select Divide from the mathematics pack ,enter 100 as variable to divide the column with then convert the data type to percentage ."
+In the Power Query Editor, go to the Transform tab and select Divide from the mathematics pack,enter 100 as variable to divide the column with then convert the data type to percentage."
 ![Screenshot (138)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/7789d1eb-16ca-496b-a1e2-f2cf11d46b5b)
+
+## contract column
+"Contract: This column contains information about the start and end dates of players' contracts, indicating their duration in years. However, the issue arises due to the diverse nature of contracts, including paid contracts, loan agreements, and free transfers."
+![Screenshot (139)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/515034af-a637-4cbc-bdaa-a0bf12110615)
+To get more insight from the data its important to create a player status column to know which player is playing on contract , loan or free at the moment. To do this, I created the conditional column called Player_status below.
+ ![Screenshot (140)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/33b9ecd7-1839-4cd6-94b5-1262ac315c80)
+  
+  Result
+  ![Screenshot (142)](https://github.com/Junnielexia/#
+  d50']ec}{'h#
+  71/ot (143)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/55452a6a-4625-40e9-a65a-d71b041cb67c)
+-To solve the arising error i replaced error with nulls.
+-I also aadded another custom column to calculate the duration of contract
+Reslts
+![Screenshot (146)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/2a40a978-da76-4b4d-a613-a329c119eadb)
+
+***
+## Height and Weight Column
+Height Column
+to change the height column containing    inches and cm use the formular "if Text.EndsWith([Height], "cm") then
+    try Number.FromText(Text.Start([Height], Text.Length([Height]) - 2))
+    otherwise null
+else
+    try Number.FromText(Text.Start([Height], Text.Length([Height]) - 2)) * 30.48
+    otherwise null
+
+     Weight Column
+" to change the weight from kg n lbs to completely lbs entries i jused the formula brelow
+if Text.Contains([Weight], "kg") then Number.From(Text.BeforeDelimiter([Weight], "kg")) * 2.20
+else Text.BeforeDelimiter([Weight], "lbs")
+
+![Screenshot (147)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/8e4fe35c-3d25-448c-8567-5ff869d67003)
+***
+Loan Date End column
+replace all the blank cells with not on Row by using the Transform data tab
+![Screenshot (148)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/ebd11e21-dd95-4b5b-ba39-6fb051aeae23)
+
+"The Value, Wage, and Release Clause: This column indicates the market value, weekly wage, and release clause of players in FIFA 2021. Upon observing the data, I found that some records use 'M' to denote millions and 'K' to denote thousands. To convert these values into currency format, I implemented a conditional statement. I removed the 'M,' 'K,' and '€' symbols, and then multiplied the column by 1,000,000 for 'M' values and by 1,000 for 'K' values using a Conditional Column I created."
+
 
 
 ### 2. Handling Missing Values
