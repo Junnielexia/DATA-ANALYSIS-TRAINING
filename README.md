@@ -1737,7 +1737,21 @@ replace all the blank cells with not on Row by using the Transform data tab
 ![Screenshot (148)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/ebd11e21-dd95-4b5b-ba39-6fb051aeae23)
 
 "The Value, Wage, and Release Clause: This column indicates the market value, weekly wage, and release clause of players in FIFA 2021. Upon observing the data, I found that some records use 'M' to denote millions and 'K' to denote thousands. To convert these values into currency format, I implemented a conditional statement. I removed the 'M,' 'K,' and '€' symbols, and then multiplied the column by 1,000,000 for 'M' values and by 1,000 for 'K' values using a Conditional Column I created."
+![Screenshot (153)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/495b42b8-4d1c-4220-aa4b-3cb3a1b7791d)
 
+final results
+ ![Screenshot (151)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/5e10b15c-76ac-4c8b-aab7-82e5d17d6134)
+
+***
+### W/F, S/M, and IR Column: 
+These columns represent a player's weak foot rating, skill move rating, and international rating, respectively. The ratings range from 1 to 5. To simplify the data and change the data type to whole numbers, I replaced the star rating values and made the necessary adjustments."
+![Screenshot (154)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/e1d92d99-7c33-427a-bf72-65916fb2ce94)
+
+solution used
+![Screenshot (154)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/df1964cc-2473-4bc4-ba52-8ad7eb143d29)
+
+final result after replacement and changing data type
+![Screenshot (156)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/719122af-01c2-4acf-a631-d0dc2d5f814f)
 
 
 ### 2. Handling Missing Values
