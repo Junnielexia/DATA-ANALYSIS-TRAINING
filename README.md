@@ -1657,7 +1657,7 @@ It is important to enable column profile distribution and quality in the view ta
 ![Screenshot (132)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/d013e5dd-74be-4420-bcdf-549877f43c37)
 
 *removing irrelevant column*
-![Screenshot (121)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/43093f88-d506-45e5-8da2-0930d2c98419)
+![Screenshot (121)](https://github.com/Junnielexia/DATA-AN ALYSIS-TRAINING/assets/95970546/43093f88-d506-45e5-8da2-0930d2c98419)
 
 *Removing Whitespace*
 click on view and uncheck the whitespace button to make it look like a normal sized spreadsheet
@@ -1743,16 +1743,6 @@ final results
  ![Screenshot (151)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/5e10b15c-76ac-4c8b-aab7-82e5d17d6134)
 
 ***
-### W/F, S/M, and IR Column: 
-These columns represent a player's weak foot rating, skill move rating, and international rating, respectively. The ratings range from 1 to 5. To simplify the data and change the data type to whole numbers, I replaced the star rating values and made the necessary adjustments."
-![Screenshot (154)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/e1d92d99-7c33-427a-bf72-65916fb2ce94)
-
-solution used
-![Screenshot (154)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/df1964cc-2473-4bc4-ba52-8ad7eb143d29)
-
-final result after replacement and changing data type
-![Screenshot (156)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/719122af-01c2-4acf-a631-d0dc2d5f814f)
-***
 ### Hits COLUMN
 some of the values in the column contains k, to change it from text to numeric value without error it is good to convert the k to 1000.
  ![Screenshot (157)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/aa52d6c3-e912-4948-bc2b-2e7e9257f65b)
@@ -1763,48 +1753,23 @@ solution used
 final result
 ![Screenshot (158)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/27e42718-7243-40c0-b833-67dfcca153fc)
 
+***
+### W/F, S/M, and IR Column: 
+These columns represent a player's weak foot rating, skill move rating, and international rating, respectively. The ratings range from 1 to 5. To simplify the data and change the data type to whole numbers, I replaced the star rating values and made the necessary adjustments."
+![Screenshot (154)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/e1d92d99-7c33-427a-bf72-65916fb2ce94)
+
+solution used
+![Screenshot (154)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/df1964cc-2473-4bc4-ba52-8ad7eb143d29)
+
+final result after replacement and changing data type
+![Screenshot (156)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/719122af-01c2-4acf-a631-d0dc2d5f814f)
+***
+
+### Standardizing Data Formats
+"The following attributes were thoroughly reviewed for accuracy and integrity: 'Attacking', 'Crossing', 'Finishing', 'Heading Accuracy', 'Short Passing', 'Volleys', 'Skill', 'Dribbling', 'Curve', 'FK Accuracy', 'Long Passing', 'Ball Control', 'Movement', 'Acceleration', 'Spring Speed', 'Agility', 'Reactions', 'Balance', 'Power', 'Shot Power', 'Jumping', 'Stamina', 'Strength', 'Long Shot', 'Mentality', 'Aggression', 'Interception', 'Positioning', 'Vision', 'Penalties', 'Composure', 'Defending', 'Marking', 'Standing Tackle', 'Sliding Tackle', 'Goalkeeping', 'GK Handling', 'GK Diving', 'GK Kicking', 'GK Positioning', 'GK Reflexes', 'Total Stats', 'Base Stats', 'Pace', 'Shooting', 'Passing', 'DRI', 'DEF', 'Physical', 'Best Position', 'Preferred Foot', 'Attacking Work Rate', and 'Defensive Work Rate'. Rest assured, the data was meticulously scrutinized, ensuring all data types were accurately assigned and any erroneous column names were rectified to maintain data consistency and reliability."
 
 ### 2. Handling Missing Values
-   - Identifying missing values in the dataset.
-   - Techniques for handling missing values:
-     - Removing rows with missing values using the "Remove Rows" transformation.
-     - Filling missing values with appropriate methods like mean, median, or mode using the "Fill" or "Replace Values" transformation.
-
-### 3. Removing Duplicates
-   - Identifying and removing duplicate rows in the dataset.
-   - Utilizing the "Remove Rows" transformation to eliminate duplicate records.
-
-### 4. Standardizing Data Formats
-   - Converting columns to the correct data types:
-     - Using the "Change Type" transformation to convert columns to appropriate data types.
-   - Ensuring consistent formatting across columns:
-     - Applying transformations for capitalization, date formats, and other formatting requirements.
-
-### 5. Cleaning Specific Attributes
-   - Overall and Potential Ratings:
-     - Cleaning and analyzing overall and potential ratings using appropriate transformations.
-   - Skill Ratings:
-     - Cleaning and exploring skill move ratings and weak foot ratings.
-   - Work Rates:
-     - Cleaning and analyzing attacking and defensive work rates.
-   - International Reputation:
-     - Cleaning and analyzing international reputation ratings.
-   - Contract Details:
-     - Cleaning and exploring contract details, including team and contract specifics.
-   - Physical Attributes:
-     - Cleaning and analyzing physical attributes like pace, shooting, passing, dribbling, and defense ratings.
-
-### 6. Previewing Transformed Data
-   - Reviewing the cleaned and transformed data in the Power Query Editor.
-   - Ensuring the desired changes have been successfully applied.
-
-### 7. Loading Cleaned Data into Power BI
-   - Closing the Power Query Editor and loading the cleaned and transformed data into Power BI.
-
-### 8. Data Visualization and Analysis
-   - Utilizing Power BI's visualization capabilities to create insightful charts, tables, and dashboards.
-   - Analyzing and interpreting the cleaned data using appropriate visualizations.
-   - Drawing conclusions and documenting key findings from the analysis.
+   
 
 ### Conclusion
 - Recap of the data cleaning process using Power BI.
