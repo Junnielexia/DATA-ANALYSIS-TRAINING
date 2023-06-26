@@ -1706,10 +1706,10 @@ In the Power Query Editor, go to the Transform tab and select Divide from the ma
 To get more insight from the data its important to create a player status column to know which player is playing on contract , loan or free at the moment. To do this, I created the conditional column called Player_status below.
  ![Screenshot (140)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/33b9ecd7-1839-4cd6-94b5-1262ac315c80)
   
-  Result
+Final Result
   ![Screenshot (142)](https://github.com/Junnielexia/#
-  d50']ec}{'h#
-  71/ot (143)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/55452a6a-4625-40e9-a65a-d71b041cb67c)
+  
+  {'h#71/ot (143)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/55452a6a-4625-40e9-a65a-d71b041cb67c)
 -To solve the arising error i replaced error with nulls.
 -I also aadded another custom column to calculate the duration of contract
 Reslts
@@ -1752,6 +1752,16 @@ solution used
 
 final result after replacement and changing data type
 ![Screenshot (156)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/719122af-01c2-4acf-a631-d0dc2d5f814f)
+***
+### Hits COLUMN
+some of the values in the column contains k, to change it from text to numeric value without error it is good to convert the k to 1000.
+ ![Screenshot (157)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/aa52d6c3-e912-4948-bc2b-2e7e9257f65b)
+
+solution used
+![Screenshot (160)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/600dd80c-33ac-4938-b529-fdb5d4b14a65)
+
+final result
+![Screenshot (158)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/27e42718-7243-40c0-b833-67dfcca153fc)
 
 
 ### 2. Handling Missing Values
