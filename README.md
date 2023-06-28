@@ -1571,8 +1571,7 @@ With Power Query, you can:
 
 # Introduction
 
-Welcome to the Idiot's Guide to Data Cleaning and Analysis with Power BI! In this guide, we will explore the importance of data cleaning in the data analysis process and introduce you to Power BI, a powerful tool for both data cleaning and analysis. By following the steps outlined here, even someone with little to no prior experience can learn how to prepare and analyze data effectively. So let's get started!
-![Screenshot (124)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/389b3e08-9cd3-476a-b780-434966392f85)
+Welcome to the Idiot's Guide to Data Cleaning and Analysis with Power BI! In this guide, we will explore the importance of data cleaning in the data analysis process and introduce you to Power BI, a powerful tool for both data cleaning and analysis. By following the steps outlined here, even someone with little to no prior experience can learn how to prepare and analyze data effectively. 
 
 ## Overview of the Importance of Data Cleaning in the Data Analysis Process
 
@@ -1584,28 +1583,32 @@ Power BI is a popular business analytics tool developed by Microsoft. It provide
 
 ![Screenshot (124)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/57da219c-e96b-46a9-9be3-2803ee96e6fa)
 
+***
 
 ## 1. Data Preparation
 
 Before we dive into data cleaning, we need a dataset to work with. In this guide, we will be using the FIFA 2021 dataset, which contains information about football players from around the world. You can download this dataset from [KAGLE].
 
-### Importing the FIFA 2021 Dataset into Power BI
+**Importing the FIFA 2021 Dataset into Power BI**
 
 To import the FIFA 2021 dataset into Power BI, follow these steps:
 
 1. Launch Power BI Desktop.
 2. Click on "Get Data" in the Home tab.
+
 ![Screenshot (123)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/107aed6f-ab5e-413d-90c4-116707ae407a)
 
 3. Select the appropriate file format for your dataset (e.g., Excel, CSV, etc.).
+   
 ![Screenshot (126)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/af96a72c-4a43-4153-9c36-3158c92b1ddd)
 
 4. Locate and select the FIFA 2021 dataset file on your computer.
 5. Click "Load" to import the dataset into Power BI.
+   
 ![Screenshot (121)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/2834c742-64e4-49b2-9457-f117cc82fdce)
 
 
-### Opening the Power Query Editor for Data Cleaning Tasks
+**Opening the Power Query Editor for Data Cleaning Tasks**
 
 Once the dataset is imported, Power BI will open the Power Query Editor, which is a powerful tool for data transformation and cleaning. In the Power Query Editor, you can perform various data cleaning tasks, such as removing duplicates, handling missing values, renaming columns, and more.
 
@@ -1618,7 +1621,7 @@ To open the Power Query Editor, follow these steps:
 ![Screenshot (127)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/cc279749-a383-4b4f-8470-dc99526878ac)
 
 
-### Initial Data Exploration and Understanding the Dataset Structure
+**Initial Data Exploration and Understanding the Dataset Structure**
 
 Before diving into data cleaning, it's essential to explore and understand the structure of your dataset. This exploration helps you identify any potential issues and plan your cleaning strategies accordingly. In Power Query Editor, you can perform the following tasks for initial data exploration:
 
@@ -1631,11 +1634,12 @@ Before diving into data cleaning, it's essential to explore and understand the s
 4. Identify missing values: Look for any blank cells or placeholders that indicate missing values. Missing values need to be handled appropriately during the data cleaning process.
 
 By performing these initial exploration tasks, you will gain a better understanding of the dataset's structure and identify potential areas that require data cleaning.
+
 ## FIFA 2021 Dataset
 
 The FIFA 2021 dataset is a valuable resource obtained from Kaggle, providing detailed information on 18,979 football players. With 77 columns capturing player statistics and demography for the year 2021, you can explore a wide range of data, including unique identification numbers, names, ages, nationalities, positions, overall ratings, wages, contracts, and more. This comprehensive dataset offers valuable insights for analyzing player performance, studying demographics, and exploring various attributes within the footballing world of 2021.
 
-### Project Goals
+**Project Goals**
 
 To facilitate effective data analysis, this project sets out to accomplish the following goals:
 
@@ -1655,7 +1659,7 @@ By accomplishing these project goals in a systematic manner, we will achieve a c
 
 Here's the improved version of the content you provided:
 
-**Insight from Column**
+### Insight from Column
 
 Enabling column profile distribution and quality in the View tab is essential for gaining insights into data distribution, assessing data quality, identifying discrepancies, validating data, and improving data exploration capabilities. This feature allows you to understand the distribution of data in a column, evaluate its quality, and identify any issues that need attention.
 
@@ -1680,7 +1684,7 @@ To remove whitespace and make the spreadsheet appear normal-sized, follow these 
 1. Click on the View tab.
 2. Uncheck the "Whitespace" button.
 
-**Standardizing Data Formats**
+### Standardizing Data Formats
 
 **ID Column: Conversion from Numeric to Text**
 
@@ -1697,6 +1701,7 @@ To convert the ID column from number to text in Power Query within Power BI, fol
 4. Choose "Text" as the data type for the ID column.
 
 5. Power Query will automatically convert the ID column from number to text format.
+
 ![Screenshot (130)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/259cee0a-d689-4950-8d43-2f0a77aed4c0)
 
 **Extracting Names from Player URL**
@@ -1708,6 +1713,7 @@ Due to the presence of special characters in some of the player names columns, i
 3. Delete the unnecessary columns, keeping only the column that contains the player names.
 4. To remove the dash between each name, right-click on the column header and choose "Replace Values." Replace the dash with an empty value.
 5. To capitalize the first letter of each name, right-click on the column header, choose "Transform," and then select "Capitalize Each Word." Also, rename the column to FullName for better clarity.
+ 
 ![Screenshot (135)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/d364ae11-9695-48af-b98d-dc32238c68d1)
 
 **Age and Nationality Column**
@@ -1722,20 +1728,26 @@ To convert the Overall Rating (OVA) and Potential Rating (POT) columns into perc
 1. In the Power Query Editor, go to the Transform tab and select Divide from the mathematics pack.
 2. Enter 100 as the variable to divide the columns with.
 3. Convert the data type to percentage.
+
 ![Screenshot (138)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/7789d1eb-16ca-496b-a1e2-f2cf11d46b5b)
 
 **Contract Column**
 
 The Contract column contains information about the start and end dates of players' contracts, indicating their duration in years. However, there is a diversity of contract types, including paid contracts, loan agreements, and free transfers.
+
 ![Screenshot (139)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/515034af-a637-4cbc-bdaa-a0bf12110615)
 
 To gain more insight from the data, it is important to create a Player Status column to determine whether a player is currently on a contract, loan, or free transfer. A conditional column called Player_status was created for this purpose.
+
 ![Screenshot (140)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/33b9ecd7-1839-4cd6-94b5-1262ac315c80)
 
-## Final Result
+**Final Result**
+
 ![Screenshot (142)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/f734467d-e7f7-46ff-a277-e1dd0256d16a)
 
 ![Screenshot (143)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/c6cb3dc4-0cba-4d11-85fa-0504ee317523)
+
+### Replacing Error 
 
 - To solve the arising error, I replaced errors with null values.
 - I also added another custom column to calculate the duration of the contract.
@@ -1745,7 +1757,6 @@ To gain more insight from the data, it is important to create a Player Status co
 
 ***
 
-## Height and Weight Column
 **Height Column**
 
 To change the height column containing inches and cm, use the formula:
@@ -1771,6 +1782,7 @@ else Text.BeforeDelimiter([Weight], "lbs")
 ***
 ## Handling Missing Values
 In the data cleaning process, one crucial step is handling missing values effectively. Missing values can occur due to various reasons such as data entry errors, system issues, or incomplete data. It is essential to address these missing values to ensure the accuracy and reliability of the analysis.
+
 **Loan Date End Column**
 
 To standardize the loan date end column, I replaced all the blank cells with "not on Row" using the Transform Data tab.
@@ -1784,18 +1796,21 @@ In the Value, Wage, and Release Clause column, which indicates the market value,
 ![Screenshot (153)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/495b42b8-4d1c-4220-aa4b-3cb3a1b7791d)
 
 ### Final Results
+
 ![Screenshot (151)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/5e10b15c-76ac-4c8b-aab7-82e5d17d6134)
 
 **Hits Column**
 
 In the Hits column, I noticed that some values contain 'k'. To convert these values from text to numeric format without errors, I replaced 'k' with 1000.
 
- ![Screenshot (157)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/aa52d6c3-e912-4948-bc2b-2e7e9257f65b)
+![Screenshot (157)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/aa52d6c3-e912-4948-bc2b-2e7e9257f65b)
 
 Solution used:
+
 ![Screenshot (160)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/600dd80c-33ac-4938-b529-fdb5d4b14a65)
 
 Final result:
+
 ![Screenshot (158)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/27e42718-7243-40c0-b833-67dfcca153fc)
 
 **W/F, S/M, and IR Column**
@@ -1805,16 +1820,20 @@ The W/F, S/M, and IR columns represent a player's weak foot rating, skill move r
 ![Screenshot (154)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/e1d92d99-7c33-427a-bf72-65916fb2ce94)
 
 Solution used:
+
 ![Screenshot (154)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/df1964cc-2473-4bc4-ba52-8ad7eb143d29)
 
 
 Final result after replacement and changing data type:
+
 ![Screenshot (156)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/719122af-01c2-4acf-a631-d0dc2d5f814f)
+
 ***
 
 ## Standardizing Data Formats
 
 In order to ensure accuracy and integrity, the following attributes were thoroughly reviewed:
+
 | Attribute             | Attribute             | Attribute             | Attribute             | Attribute             |
 |-----------------------|-----------------------|-----------------------|-----------------------|-----------------------|
 | Attacking             | Crossing              | Finishing             | Heading Accuracy      | Short Passing         |
