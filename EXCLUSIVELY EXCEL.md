@@ -1,6 +1,5 @@
 # A. Excel
 
-![image](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/4fa051c9-960c-44f5-bf0c-1aee9f06fdb6)
 ***
 ## A brief overview of Microsoft Excel:
 Microsoft Excel is a spreadsheet software developed by Microsoft. It's widely used for various data-related tasks such as data entry, analysis, and visualization. Excel is equipped with a vast array of features that allow users to perform complex data analysis tasks easily. Here are some key features of Excel:
@@ -54,7 +53,7 @@ Create and populate a table (10 rows) with the following information
 ### Answer
 To solve the task, I created a student data using characters from [Avater the last air bender],I then used the sorting function to arrange the students name in ascending order and calulated both the  total exam score and average. Finally I used the average score to carry out a conditional formatting where only the student that scored above average were highlighted.
 
-![Screenshot (65)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/70dde911-1b43-4eaa-9677-79241519b382)
+![image](images/Screenshot%20(65).png)
 
 ***
 ## Task 2 BUSINESS CASE
@@ -64,7 +63,7 @@ To solve the task, I created a student data using characters from [Avater the la
 ### Answer
 To solve the task,I used the sum function to calculate total revenue (SALES) and profit , then used conditional formating to highligh units sold that are greater than the average i calculated and finally i used the filter function to show the question 3.
 
-![Screenshot (67)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/8bf0651c-b4f4-4426-a670-3b7c03a5516a)
+![image](images/Screenshot%20(67).png)
 
 ***
 ## WEEK 1 TASK: SALES DATA
@@ -82,11 +81,12 @@ To solve the task,I used the sum function to calculate total revenue (SALES) and
 To solve this, I used the sumfunction to answer question 1-4,I calculated the average and used conditional formating to answer question 6&7, I used the filter function to solve question 8 and 9 and finally I used data validation function to answer question 10.
 #### Week1 TASK 1-8,10
 
-![week1question1-10](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/8baaf186-d707-4e50-9b81-1b1c19240c8c)
+![image](images/Screenshot%20(week1question1-10).png)
 
 #### TASK 9
 
-![week1question9](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/3052a3e0-5756-45c3-9cd8-ba9f184f027e)
+![image](images/Screenshot%20(week1question9).png)
+
 ***
 # WEEK 2 - EXCEL formulas and function
 Excel formulas and functions are powerful tools that allow users to perform various calculations and operations within spreadsheets. Here are some important concepts and functions you should be aware of:
@@ -132,6 +132,7 @@ Excel formulas and functions are powerful tools that allow users to perform vari
 | SUMIF              | `=SUMIF(range, criteria, sum_range)`             |
 | COUNTIF            | `=COUNTIF(range, criteria)`                      |
 | AVERAGEIF          | `=AVERAGEIF(range, criteria, average_range)`     |
+
 ***
 ## PIVOT TABLES IN EXCEL
 Pivot tables are a powerful feature in Excel that allow you to summarize and analyze large amounts of data in a structured and dynamic way. They provide a flexible and interactive way to organize, summarize, and extract insights from your data.
@@ -154,7 +155,8 @@ Pivot tables are a powerful feature in Excel that allow you to summarize and ana
 
 Pivot tables are especially useful when dealing with large datasets and complex data analysis tasks. They enable you to quickly analyze and visualize data from different perspectives, identify patterns, trends, and outliers, and make data-driven decisions more effectively.
 
-![Screenshot (74)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/92b26264-5ac3-4098-8083-0ffe53bf9d3b)
+![image](images/Screenshot%20(74).png)
+
 ***
 ## PIVOT CHART
 Pivot charts are visual representations of data that are created from pivot tables in Excel. They provide a dynamic and interactive way to analyze and summarize large datasets. Pivot charts allow you to visualize trends, patterns, and relationships within your data, making it easier to derive insights and communicate information effectively.
@@ -178,7 +180,9 @@ Pivot charts are visual representations of data that are created from pivot tabl
 8. **Update the Pivot Chart**: If your underlying data changes or if you modify the pivot table, the pivot chart will automatically update to reflect those changes. You can also manually refresh the chart by right-clicking on it and selecting "Refresh" or by refreshing the pivot table data.
 
 Pivot charts provide a visual representation of the summarized data in your pivot table, allowing you to identify trends, compare values, and present insights effectively. They are an essential tool for data analysis and reporting in Excel, as they enable you to transform raw data into meaningful visualizations.
-![Screenshot (75)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/91427010-deb3-4494-bd49-b2e4ff771845)
+
+![image](images/Screenshot%20(75).png)
+
 ***
 # WEEK2- TASK 1
 Using the sales dataset provided,carryout the following
@@ -198,7 +202,8 @@ Using the sales dataset provided,carryout the following
 |3. Total number of sales where gross sale is less than average| `=COUNTIF(GrossSaleRange, "<" & AVERAGE(GrossSaleRange))`              |
 
 ### Solution (Question 1,2,3)
-![Screenshot (73)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/550538fa-39db-462c-b792-19f8db7a1ca9)
+
+![image](images/Screenshot%20(73).png)
 
 ### solution: PIVOT TABLE 1
 ![image](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/235c81a3-2c6e-402d-a58e-e2dfe3da73ed)
@@ -260,7 +265,8 @@ f. How sales vary by segment
 g. Order and Sales by Year
 h. Order and Sales by Month
 10. Build an interactive dashboard showing the insights above
-![Screenshot (77)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/bb9a6a57-99f8-4349-961d-5d89871e5f53)
+
+![image](images/Screenshot%20(77).png)
 
 ***
 # Answer
@@ -280,19 +286,22 @@ h. Order and Sales by Month
 | 8      | Total revenue generated in Kentucky           | `=SUMIFS(revenue_column, state_column, "Kentucky")`                  |
 | 9      | Convert text and date to date in a column     | `=IF(ISNUMBER(A1), DATEVALUE(A1), DATEVALUE(TEXT(A1, "dd/mm/yyyy")))`|
 
-![Screenshot (82)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/b64f1e52-b9d5-41c1-808b-6b293a8fd154)
+![image](images/Screenshot%20(82).png)
+
 ***
 **Third Analysis:** To solvre business question 9 I selected the data by using ctrl + shift + arrow left + arrow down, then i inserted the different pivot tables. for 9h i grouped the date filter to get months.
 **Business Question 9a-f**
 
-![Screenshot (79)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/cab00b52-d8d7-4ced-96ad-0222ed096bc4)
+![image](images/Screenshot%20(79).png)
 
 **Business Question 9g-h**
 
-![Screenshot (80)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/bc3c2ad8-17d8-490c-ae37-498ad7281fef)
+![image](images/Screenshot%20(80).png)
+
 ***
 **Fourth Analysis:** I used thge 8 pivot tables to created a pivot chart for visualization of the data.
-![Screenshot (84)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/7b665ef1-ed8e-41e2-b657-3a937808ae4f)
+
+![image](images/Screenshot%20(84).png)
 ***
 **Fifth Analysis:** I created a dashboard representing the kpI and added interactivity to it by including search button for the customers,links and icons,slicers etc
 
