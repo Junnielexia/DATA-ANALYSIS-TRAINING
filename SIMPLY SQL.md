@@ -136,7 +136,8 @@ INSERT INTO students (students_Id, first_name, last_name, Age, Exam_score, passi
     (9, 'Mai', 'Assassin', 17, 84, 'B'),
     (10, 'Ty Lee', 'Circus Performer', 16, 82, 'C');
 ```
-![Screenshot (86)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/7e598397-d14d-4506-b30a-990c85f3279b)
+images/Screenshot (86).png
+
 ***
 ### Task two
 1. insert 5 more rows of infformation into the table you already created
@@ -163,7 +164,7 @@ INSERT INTO students (students_Id, first_name, last_name, Age, Exam_score, passi
     (14, 'KatarI', 'Healer', 20, 90, 'A'),
     (15, 'TopI', 'Metalbender', 16, 88, 'B');
 ```
-![Screenshot (88)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/791059e4-5469-40ac-a24a-576b0ba59a0c)
+images/Screenshot (88).png
 
 2. Update the Scores and Grades of the first 5 students in your table to the following respectively (scores: 60, 65, 50.5, 45, and 71.5) (Grades: B, B, C, D, and A).
 
@@ -192,7 +193,7 @@ SET Exam_score = CASE students_Id
     END
 WHERE students_Id IN (1, 2, 3, 4, 5);
 ```
-![Screenshot (90)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/34cb8024-e2a6-4a1d-ba4d-8ab388c995a3)
+images/Screenshot (90).png
 
 3.#### Answer - Deleting Records
 
@@ -202,7 +203,7 @@ To delete the records of student IDs 6, 7, 8, 9, and 10 from the `students` tabl
 DELETE FROM students
 WHERE students_Id IN (6, 7, 8, 9, 10);
 
-![Screenshot (91)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/07dc6324-7a51-45ea-bca4-cd2f78cb7144)
+images/Screenshot (91).png
 
 4. Show the first Names and Grades of every student.
 
@@ -216,7 +217,7 @@ SELECT first_name, passing_grade
 FROM students;
 ```
 
-![Screenshot (92)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/05b7babd-b4d6-4c44-bf5d-98c71f9f6a99)
+images/Screenshot (92).png
 
 5. Show the records for students with the following Grades only (Grades: A and B).
 
@@ -230,7 +231,7 @@ SELECT *
 FROM students
 WHERE passing_grade IN ('A', 'B');
 ```
-![Screenshot (93)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/c01088da-6dfa-4d3f-80ac-d1f7093b8da3)
+images/Screenshot (93).png
 
  # SQL PROJECT DETAILS
 ``` For this project, you are going to demonstrate the knowledge of the following concepts in SQL;
@@ -570,7 +571,7 @@ VALUES
   (99, 'Harper Wright', 'harper.wright@example.com', '555-4567', '2021-07-20', 2),
   (100, 'Evelyn King', 'evelyn.king@example.com', '555-8901', '2022-10-30', 3);
   ```
-  ![Screenshot (115)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/d86977e0-6228-4edf-a717-8cbc3bb28392)
+images/Screenshot (115).png
 
   ***
 ### Question 1b
@@ -587,7 +588,7 @@ VALUES
   (3, 'Human Resources', 'Michael Davis'),
   (4, 'Finance', 'Sarah Thompson');
   ```
-  ![Screenshot (109)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/0bae3c1c-5bff-4456-90ae-137e019947ab)
+images/Screenshot (109).png
 
   ***
 ### Question 1c
@@ -681,7 +682,7 @@ UPDATE EMPLOYEE
 SET department_id = '4'
 WHERE employee_id IN (9, 10, 11);
 ```
-![Screenshot (110)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/7adcc947-c437-4a5a-9b61-5f6e366ea04b)
+images/Screenshot (110).png
 
 ***
 ### Question 3.	JOINS
@@ -691,7 +692,7 @@ SELECT *
 FROM EMPLOYEE
 INNER JOIN SALARY ON EMPLOYEE.employee_id = SALARY.emp_id;
 ```
-![Screenshot (94)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/437e3a50-edd5-4910-b668-94b1b4dcdc00)
+images/Screenshot (94).png
 
 ***
 ### Question 4
@@ -700,8 +701,7 @@ INNER JOIN SALARY ON EMPLOYEE.employee_id = SALARY.emp_id;
 SELECT COUNT(*) AS total_employees
 FROM EMPLOYEE;
 ```
-![Screenshot (111)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/6fd235f4-1c85-4778-96ba-b6f66f2f3182)
-
+images/Screenshot (111).png
 
 ***
  ### 4b.	How many employees were hired in the year 2023? 
@@ -710,7 +710,7 @@ SELECT COUNT(*) AS employees_hired_2023
 FROM EMPLOYEE
 WHERE YEAR(hire_date) = 2023;
 ```
-![Screenshot (96)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/80f2954b-5c94-4845-be3e-7f3e633297ea)
+images/Screenshot (96).png
 
 ***
  ### 4c.What is the average salary for employees in each department? 
@@ -721,7 +721,8 @@ JOIN Department ON EMPLOYEE.department_id = Department.dept_id
 JOIN SALARY ON EMPLOYEE.EMPLOYEE_id = SALARY.emp_id
 GROUP BY EMPLOYEE.department_id, DEPARTMENT.dept_name;
 ```
-![Screenshot (114)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/21562690-7d8b-4b0b-a020-af715d0b3544)
+images/Screenshot (114).png
+
 ***
 ### 4d.	How many employees are there in each department
 ```
@@ -730,7 +731,7 @@ FROM DEPARTMENT
 LEFT JOIN EMPLOYEE ON DEPARTMENT.dept_id = EMPLOYEE.department_id
 GROUP BY DEPARTMENT.dept_id, DEPARTMENT.dept_name;
 ```
-![Screenshot (112)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/affcb29d-23d1-40fb-8040-5085a5a24539)
+images/Screenshot (112).png
 
 ***
 ### 4e.	Who are the department heads and their corresponding departments 
@@ -738,7 +739,7 @@ GROUP BY DEPARTMENT.dept_id, DEPARTMENT.dept_name;
 SELECT dept_head, dept_name
 FROM DEPARTMENT;
 ```
-![Screenshot (109)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/9964f66e-1c72-477b-89a2-13cd7b133d54)
+images/Screenshot (109).png
 
 ***
 ### 4f.	What is the highest salary earned by an employee?
@@ -746,7 +747,7 @@ FROM DEPARTMENT;
 SELECT MAX(salary_amount) AS highest_salary
 FROM SALARY;
 ```
-![Screenshot (113)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/e4064892-71b4-47c9-9760-65b258b4bb9b)
+images/Screenshot (113).png
 
 ***
 ### 4g.	What is the total salary expense for each department?
@@ -757,7 +758,7 @@ JOIN DEPARTMENT ON EMPLOYEE.department_id = DEPARTMENT.dept_id
 JOIN SALARY ON EMPLOYEE.employee_id = SALARY.emp_id
 GROUP BY EMPLOYEE.department_id, DEPARTMENT.dept_name;
 ```
-![Screenshot (102)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/55339858-61dd-4e9a-a4da-9d7622e016e1)
+images/Screenshot (102).png
 
 ***
 ### 4h.	How many employees were hired each year?
@@ -766,7 +767,7 @@ SELECT YEAR(hire_date) AS hire_year, COUNT(*) AS employees_hired
 FROM Employees
 GROUP BY YEAR(hire_date);
 ```
-![Screenshot (103)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/cffaa49c-8f6a-4c58-b8b4-cf5026241a5a)
+images/Screenshot (103).png
 
 ***
 ### Question 5-DATA QUERRYING--
@@ -786,7 +787,7 @@ JOIN avg_salaries a ON e.department_id = a.department_id
 WHERE s.salary_amount > a.avg_salary
 ORDER BY e.department_id ASC;
 ```
-![Screenshot (107)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/4266a776-78d1-4a82-9405-468ccb8ff550)
+images/Screenshot (107).png
 
 ***
 ### 5b. What is the highest salary in each department, and which employees earn that salary?
@@ -803,6 +804,7 @@ JOIN Salary s ON e.employee_id = s.emp_id
 JOIN max_salaries m ON e.department_id = m.department_id AND s.salary_amount = m.max_salary
 ORDER BY e.name ASC
 ```
-![Screenshot (109)](https://github.com/Junnielexia/DATA-ANALYSIS-TRAINING/assets/95970546/53d550a0-50b8-4342-9e8b-90cad6021388)
+images/Screenshot (109).png
+
 ***
 
