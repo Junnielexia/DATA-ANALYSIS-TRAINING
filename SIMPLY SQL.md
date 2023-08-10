@@ -163,8 +163,10 @@ INSERT INTO students (students_Id, first_name, last_name, Age, Exam_score, passi
     (13, 'AzulI', 'Princess', 17, 78, 'C'),
     (14, 'KatarI', 'Healer', 20, 90, 'A'),
     (15, 'TopI', 'Metalbender', 16, 88, 'B');
+
 ```
-images/Screenshot (88).png
+![image](images/Screenshot%20(88).png)
+
 
 2. Update the Scores and Grades of the first 5 students in your table to the following respectively (scores: 60, 65, 50.5, 45, and 71.5) (Grades: B, B, C, D, and A).
 
@@ -425,6 +427,7 @@ VALUES
   (63, 87, 59000.00, '2021-08-20', '2022-07-31'),
   (64, 89, 72000.00, '2022-11-05', '2022-12-31'),
   (65, 91, 61000.00, '2021-09-15', '2022-12-31');
+
 ```
 
 ### 2.	DATA UPDATE
@@ -571,9 +574,10 @@ VALUES
   (99, 'Harper Wright', 'harper.wright@example.com', '555-4567', '2021-07-20', 2),
   (100, 'Evelyn King', 'evelyn.king@example.com', '555-8901', '2022-10-30', 3);
   ```
+
 ![image](images/Screenshot%20(115).png)
 
-  ***
+***
 ### Question 1b
 ```
 CREATE TABLE DEPARTMENT(
@@ -590,7 +594,7 @@ VALUES
   ```
 ![image](images/Screenshot%20(109).png)
 
-  ***
+***
 ### Question 1c
 ```
 CREATE TABLE SALARY(
@@ -739,7 +743,7 @@ GROUP BY DEPARTMENT.dept_id, DEPARTMENT.dept_name;
 SELECT dept_head, dept_name
 FROM DEPARTMENT;
 ```
-images/Screenshot (109).png
+![image](images/Screenshot%20(109).png)
 
 ***
 ### 4f.	What is the highest salary earned by an employee?
