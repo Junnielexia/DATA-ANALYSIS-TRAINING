@@ -136,7 +136,7 @@ INSERT INTO students (students_Id, first_name, last_name, Age, Exam_score, passi
     (9, 'Mai', 'Assassin', 17, 84, 'B'),
     (10, 'Ty Lee', 'Circus Performer', 16, 82, 'C');
 ```
-images/Screenshot (86).png
+![image](images/Screenshot%20(86).png)
 
 ***
 ### Task two
@@ -193,7 +193,7 @@ SET Exam_score = CASE students_Id
     END
 WHERE students_Id IN (1, 2, 3, 4, 5);
 ```
-images/Screenshot (90).png
+![image](images/Screenshot%20(90).png)
 
 3.#### Answer - Deleting Records
 
@@ -203,7 +203,7 @@ To delete the records of student IDs 6, 7, 8, 9, and 10 from the `students` tabl
 DELETE FROM students
 WHERE students_Id IN (6, 7, 8, 9, 10);
 
-images/Screenshot (91).png
+![image](images/Screenshot%20(91).png)
 
 4. Show the first Names and Grades of every student.
 
@@ -217,7 +217,7 @@ SELECT first_name, passing_grade
 FROM students;
 ```
 
-images/Screenshot (92).png
+![image](images/Screenshot%20(92).png)
 
 5. Show the records for students with the following Grades only (Grades: A and B).
 
@@ -231,7 +231,7 @@ SELECT *
 FROM students
 WHERE passing_grade IN ('A', 'B');
 ```
-images/Screenshot (93).png
+![image](images/Screenshot%20(93).png)
 
  # SQL PROJECT DETAILS
 ``` For this project, you are going to demonstrate the knowledge of the following concepts in SQL;
@@ -571,7 +571,7 @@ VALUES
   (99, 'Harper Wright', 'harper.wright@example.com', '555-4567', '2021-07-20', 2),
   (100, 'Evelyn King', 'evelyn.king@example.com', '555-8901', '2022-10-30', 3);
   ```
-images/Screenshot (115).png
+![image](images/Screenshot%20(115).png)
 
   ***
 ### Question 1b
@@ -588,7 +588,7 @@ VALUES
   (3, 'Human Resources', 'Michael Davis'),
   (4, 'Finance', 'Sarah Thompson');
   ```
-images/Screenshot (109).png
+![image](images/Screenshot%20(109).png)
 
   ***
 ### Question 1c
@@ -682,7 +682,7 @@ UPDATE EMPLOYEE
 SET department_id = '4'
 WHERE employee_id IN (9, 10, 11);
 ```
-images/Screenshot (110).png
+![image](images/Screenshot%20(110).png)
 
 ***
 ### Question 3.	JOINS
@@ -692,7 +692,7 @@ SELECT *
 FROM EMPLOYEE
 INNER JOIN SALARY ON EMPLOYEE.employee_id = SALARY.emp_id;
 ```
-images/Screenshot (94).png
+![image](images/Screenshot%20(94).png)
 
 ***
 ### Question 4
@@ -701,7 +701,7 @@ images/Screenshot (94).png
 SELECT COUNT(*) AS total_employees
 FROM EMPLOYEE;
 ```
-images/Screenshot (111).png
+![image](images/Screenshot%20(111).png)
 
 ***
  ### 4b.	How many employees were hired in the year 2023? 
@@ -710,7 +710,7 @@ SELECT COUNT(*) AS employees_hired_2023
 FROM EMPLOYEE
 WHERE YEAR(hire_date) = 2023;
 ```
-images/Screenshot (96).png
+![image](images/Screenshot%20(96).png)
 
 ***
  ### 4c.What is the average salary for employees in each department? 
@@ -721,7 +721,7 @@ JOIN Department ON EMPLOYEE.department_id = Department.dept_id
 JOIN SALARY ON EMPLOYEE.EMPLOYEE_id = SALARY.emp_id
 GROUP BY EMPLOYEE.department_id, DEPARTMENT.dept_name;
 ```
-images/Screenshot (114).png
+![image](images/Screenshot%20(114).png)
 
 ***
 ### 4d.	How many employees are there in each department
@@ -731,7 +731,7 @@ FROM DEPARTMENT
 LEFT JOIN EMPLOYEE ON DEPARTMENT.dept_id = EMPLOYEE.department_id
 GROUP BY DEPARTMENT.dept_id, DEPARTMENT.dept_name;
 ```
-images/Screenshot (112).png
+![image](images/Screenshot%20(112).png)
 
 ***
 ### 4e.	Who are the department heads and their corresponding departments 
@@ -747,7 +747,7 @@ images/Screenshot (109).png
 SELECT MAX(salary_amount) AS highest_salary
 FROM SALARY;
 ```
-images/Screenshot (113).png
+![image](images/Screenshot%20(113).png)
 
 ***
 ### 4g.	What is the total salary expense for each department?
@@ -758,7 +758,7 @@ JOIN DEPARTMENT ON EMPLOYEE.department_id = DEPARTMENT.dept_id
 JOIN SALARY ON EMPLOYEE.employee_id = SALARY.emp_id
 GROUP BY EMPLOYEE.department_id, DEPARTMENT.dept_name;
 ```
-images/Screenshot (102).png
+![image](images/Screenshot%20(102).png)
 
 ***
 ### 4h.	How many employees were hired each year?
@@ -787,7 +787,7 @@ JOIN avg_salaries a ON e.department_id = a.department_id
 WHERE s.salary_amount > a.avg_salary
 ORDER BY e.department_id ASC;
 ```
-images/Screenshot (107).png
+![image](images/Screenshot%20(107).png)
 
 ***
 ### 5b. What is the highest salary in each department, and which employees earn that salary?
@@ -804,7 +804,7 @@ JOIN Salary s ON e.employee_id = s.emp_id
 JOIN max_salaries m ON e.department_id = m.department_id AND s.salary_amount = m.max_salary
 ORDER BY e.name ASC
 ```
-images/Screenshot (109).png
+![image](images/Screenshot%20(109).png)
 
 ***
 
