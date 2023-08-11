@@ -1179,7 +1179,7 @@ ORDER BY e.name ASC
 ![Screenshot (109)](images/Screenshot%20(109).png)
 ***
 
-# POERBI AND POWERQUERY A GUIDE
+# POWER-BI AND POWERQUERY A GUIDE
 
 ## Data Cleaning and Analysis with Power BI
 
